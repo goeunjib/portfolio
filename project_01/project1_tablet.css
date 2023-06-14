@@ -9,7 +9,6 @@ main header .header-bar img {
 main header .header-bar .hamber {
   width: 12.063rem;
   font-size: 1.25rem;
-
   vertical-align: middle;
   justify-content: space-between;
 }

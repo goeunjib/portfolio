@@ -20,9 +20,8 @@ main header .header-bar img {
   margin: 0.75rem 0.5rem;
 }
 
-main header .header-bar .menu p {
-  text-indent: -999px;
-  overflow: hidden;
+main header .header-bar .menu {
+  display: none;
 }
 
 main header .header-bar .hamber {
@@ -113,35 +112,35 @@ main header .scroll .youtube-blue-box .youtube-txt {
   text-align: center;
 }
 
-.article1 .grid {
+.article1 .article1-grid {
   border-top: 1.5px solid var(--main-color);
   border-bottom: 1.5px solid var(--main-color);
 }
 
-.article1 .grid p:nth-child(1) {
+.article1 .article1-grid p:nth-child(1) {
   font-size: 2.188rem;
   margin: 35px 0 0;
   color: var(--main-color);
 }
 
-.article1 .grid p:nth-child(2) {
+.article1 .article1-grid p:nth-child(2) {
   font-size: 2.188rem;
   margin: 9px 0 20px;
   color: var(--main-color);
 }
 
-.article1 .grid p:nth-child(3) {
+.article1 .article1-grid p:nth-child(3) {
   font-size: 0.75rem;
   margin: 0 0 25px;
   color: var(--main-color);
 }
 
-.article1 .grid img {
+.article1 .article1-grid img {
   margin: 4px auto;
   width: 100%;
 }
 
-.article1 .grid img:last-child {
+.article1 .article1-grid img:last-child {
   margin-bottom: 32px;
 }
 
