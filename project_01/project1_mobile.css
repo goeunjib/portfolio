@@ -203,6 +203,9 @@ main header .scroll .youtube-blue-box .youtube-txt {
   text-align: left;
   line-height: 1.3rem;
 }
+.article2 .article2-arrow {
+  display: none;
+}
 
 .article3 {
   background-color: var(--gray-color);

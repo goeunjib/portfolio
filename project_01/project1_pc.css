@@ -173,6 +173,7 @@ main header .scroll .youtube-blue-box img {
 
 .article2 .article2-grid .grid-train .tras-train p {
   transform: translateY(330px);
+  line-height: 1.4;
 }
 
 .article2 .article2-grid .grid-train .tras-train .train {
@@ -204,6 +205,7 @@ main header .scroll .youtube-blue-box img {
 
 .article2 .article2-grid .grid-hores .tras-hores p {
   transform: translateY(95px);
+  line-height: 1.3;
 }
 
 .article2 .article2-grid .grid-hores .tras-hores .hores {
@@ -235,6 +237,7 @@ main header .scroll .youtube-blue-box img {
 
 .article2 .article2-grid .grid-rice .tras-rice p {
   transform: translateY(95px);
+  line-height: 1.3;
 }
 
 .article2 .article2-grid .grid-rice .tras-rice .rice {
@@ -352,7 +355,7 @@ main header .scroll .youtube-blue-box img {
 }
 
 .article5 {
-  background: url(img/article5.jpg) no-repeat 50% 60%/ cover;
+  background: url(img/article5.jpg) no-repeat 50% 60% / cover;
   width: 85rem;
   height: 35rem;
   text-align: right;
@@ -406,7 +409,7 @@ main header .scroll .youtube-blue-box img {
   height: 43.313rem;
   margin: 0 auto;
   padding: 3rem 7.5rem;
-  background: url(./img/article7-2.png) no-repeat 50% / cover;
+  background: url(./img/article7-2.png) no-repeat 50% 55% / cover;
 }
 
 .article7 .grid {
