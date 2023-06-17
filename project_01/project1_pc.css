@@ -323,6 +323,11 @@ main header .scroll .youtube-blue-box img {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.article4 .grid .article4-grid {
+  position: sticky;
+  top: 1.5rem;
+}
+
 .article4 .grid .article4-grid h3 {
   text-align: left;
   font-size: 2.688rem;
