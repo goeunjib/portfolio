@@ -1,0 +1,350 @@
+@charset 'UTF-8';
+
+header {
+  padding: 1rem;
+  position: relative;
+}
+header .header_menu {
+  justify-content: space-between;
+}
+header .header_menu p {
+  font-size: 0.9375rem;
+  text-align: center;
+  line-height: 1.5;
+}
+header .header_menu .header_mail p:last-child {
+  font-size: 0.813rem;
+}
+header .position {
+  width: 17.75rem;
+  position: absolute;
+  top: 4.06rem;
+  right: 12.81rem;
+  font-size: 0.9375rem;
+}
+header h1 {
+  font-size: 20rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+header h1:last-child {
+  font-size: 17rem;
+  margin: -3rem 0 8rem;
+}
+
+.article1 {
+  margin: 0 0.94rem 5.25rem;
+  height: 60.6875rem;
+  background: url(./img/article1.png);
+}
+.article1 .video {
+  height: 60.6875rem;
+  background: rgba(143, 65, 65, 0.85);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+.article1 .video h2 {
+  font-size: 14rem;
+  margin-bottom: -2rem;
+}
+.article1 .video h2:nth-child(2) {
+  font-size: 11.875rem;
+  letter-spacing: -0.98rem;
+}
+.article1 .video p {
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+.article2 {
+  position: relative;
+}
+.article2 .position1 {
+  width: 24rem;
+  position: absolute;
+  top: 0;
+  left: 25rem;
+}
+.article2 .position2 {
+  width: 17.375rem;
+  position: absolute;
+  top: 34.188rem;
+  right: 13.25rem;
+}
+.article2 h3 {
+  padding: 38.938rem 1.12rem 0;
+  font-size: 14rem;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.article2 .pp {
+  padding: 0 1.12rem 0;
+  margin-top: -2rem;
+}
+.article2 .project {
+  background-color: var(--main-color);
+  margin-top: -5rem;
+  padding: 11.25rem 1rem 6.79rem;
+}
+.article2 .project .design1 {
+  background-color: white;
+  padding: 1.08rem 0.81rem;
+  width: 52.1875rem;
+  height: 74.363rem;
+  position: relative;
+}
+.article2 .project .design1 .article2_project_menu {
+  font-size: 0.9375rem;
+  border: 1px solid #000;
+  justify-content: space-between;
+  margin-bottom: 1.92rem;
+}
+.article2 .project .design1 .article2_project_menu p {
+  border-right: 1px solid #000;
+  width: 12.67175rem;
+  height: 1.08375rem;
+  text-align: center;
+}
+.article2 .project .design1 .article2_project_menu p:last-child {
+  border: none;
+}
+.article2 .project .design1 .blank {
+  width: 49.93663rem;
+  height: 30.42881rem;
+  border: 1px solid #000;
+}
+.article2 .project .design1 .design1_img1 {
+  position: absolute;
+  top: 5.81rem;
+  left: 2rem;
+  /* box-shadow: 3px 0px 12px 0px rgba(0, 0, 0, 0.25); */
+}
+.article2 .project .design1 .design1_img2 {
+  position: absolute;
+  top: 11.94rem;
+  right: 4.19rem;
+  /* box-shadow: 3px 0px 12px 0px rgba(0, 0, 0, 0.25); */
+}
+.article2 .project .design1 h4 {
+  font-size: 5.5rem;
+  margin-top: 15.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.article2 .project .design1 .view {
+  font-size: 0.9375rem;
+  float: right;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: -1rem;
+}
+.article2 .project .design1 .tittle {
+  font-size: 0.9375rem;
+  margin-top: 1rem;
+}
+
+.article2 .project .design2 {
+  background-color: white;
+  padding: 1.08rem 0.81rem;
+  width: 52.1875rem;
+  height: 74.363rem;
+  position: relative;
+}
+.article2 .project .design2 .article2_project_menu {
+  font-size: 0.9375rem;
+  border: 1px solid #000;
+  justify-content: space-between;
+  margin-bottom: 1.92rem;
+}
+.article2 .project .design2 .article2_project_menu p {
+  border-right: 1px solid #000;
+  width: 12.67175rem;
+  height: 1.08375rem;
+  text-align: center;
+}
+.article2 .project .design2 .article2_project_menu p:last-child {
+  border: none;
+}
+.article2 .project .design2 .blank {
+  width: 49.93663rem;
+  height: 30.42881rem;
+  border: 1px solid #000;
+}
+.article2 .project .design2 .design2_img {
+  position: absolute;
+  top: 6.69rem;
+  left: 11.88rem;
+  /* box-shadow: 3px 0px 12px 0px rgba(0, 0, 0, 0.25); */
+}
+.article2 .project .design2 h4 {
+  font-size: 5.5rem;
+  margin-top: 15.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.article2 .project .design2 .view {
+  font-size: 0.9375rem;
+  float: right;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: -1rem;
+}
+.article2 .project .design2 .tittle {
+  font-size: 0.9375rem;
+  margin-top: 1rem;
+}
+
+.article2 .project .design3 {
+  background-color: white;
+  padding: 1.08rem 0.81rem;
+  width: 52.1875rem;
+  height: 74.363rem;
+  position: relative;
+  margin-top: 4.95rem;
+}
+.article2 .project .design3 .article2_project_menu {
+  font-size: 0.9375rem;
+  border: 1px solid #000;
+  justify-content: space-between;
+  margin-bottom: 1.92rem;
+}
+.article2 .project .design3 .article2_project_menu p {
+  border-right: 1px solid #000;
+  width: 12.67175rem;
+  height: 1.08375rem;
+  text-align: center;
+}
+.article2 .project .design3 .article2_project_menu p:last-child {
+  border: none;
+}
+.article2 .project .design3 .blank {
+  width: 49.93663rem;
+  height: 41.625rem;
+  border: 1px solid #000;
+  background: url(./img/article2-3-1.png) no-repeat 50% 60% / 98%;
+}
+.article2 .project .design3 h4 {
+  font-size: 5.5rem;
+  margin-top: 3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.article2 .project .design3 .view {
+  font-size: 0.9375rem;
+  float: right;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: -1rem;
+}
+.article2 .project .design3 .tittle {
+  font-size: 0.9375rem;
+  margin-top: 1rem;
+}
+
+.article2 .project .design4 {
+  background-color: white;
+  padding: 1.08rem 0.81rem;
+  width: 52.1875rem;
+  height: 74.363rem;
+  position: relative;
+  margin-top: 4.95rem;
+}
+.article2 .project .design4 .article2_project_menu {
+  font-size: 0.9375rem;
+  border: 1px solid #000;
+  justify-content: space-between;
+  margin-bottom: 1.92rem;
+}
+.article2 .project .design4 .article2_project_menu p {
+  border-right: 1px solid #000;
+  width: 12.67175rem;
+  height: 1.08375rem;
+  text-align: center;
+}
+.article2 .project .design4 .article2_project_menu p:last-child {
+  border: none;
+}
+.article2 .project .design4 .blank {
+  width: 49.93663rem;
+  height: 30.42881rem;
+  border: 1px solid #000;
+}
+.article2 .project .design4 .design4_img {
+  position: absolute;
+  top: 8.19rem;
+  left: 3.7rem;
+  /* box-shadow: 3px 0px 12px 0px rgba(0, 0, 0, 0.25); */
+}
+.article2 .project .design4 h4 {
+  font-size: 5.5rem;
+  margin-top: 15.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.article2 .project .design4 .view {
+  font-size: 0.9375rem;
+  float: right;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: -1rem;
+}
+.article2 .project .design4 .tittle {
+  font-size: 0.9375rem;
+  margin-top: 1rem;
+}
+
+/* ------------------gogo------------------ */
+.article2 .project .design5 {
+  background-color: white;
+  padding: 1.08rem 0.81rem;
+  width: 52.1875rem;
+  height: 74.363rem;
+  position: relative;
+  margin-top: 4.95rem;
+}
+.article2 .project .design5 .article2_project_menu {
+  font-size: 0.9375rem;
+  border: 1px solid #000;
+  justify-content: space-between;
+  margin-bottom: 1.92rem;
+}
+.article2 .project .design5 .article2_project_menu p {
+  border-right: 1px solid #000;
+  width: 12.67175rem;
+  height: 1.08375rem;
+  text-align: center;
+}
+.article2 .project .design5 .article2_project_menu p:last-child {
+  border: none;
+}
+.article2 .project .design5 .blank {
+  width: 49.93663rem;
+  height: 30.42881rem;
+  border: 1px solid #000;
+}
+.article2 .project .design5 .design5_img {
+  position: absolute;
+  top: 8.19rem;
+  left: 3.7rem;
+  /* box-shadow: 3px 0px 12px 0px rgba(0, 0, 0, 0.25); */
+}
+.article2 .project .design5 h4 {
+  font-size: 5.5rem;
+  margin-top: 15.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.article2 .project .design5 .view {
+  font-size: 0.9375rem;
+  float: right;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: -1rem;
+}
+.article2 .project .design5 .tittle {
+  font-size: 0.9375rem;
+  margin-top: 1rem;
+}
