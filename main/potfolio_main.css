@@ -88,12 +88,14 @@ header h1:last-child {
   background-color: var(--main-color);
   margin-top: -5rem;
   padding: 11.25rem 1rem 6.79rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 .article2 .project .design1 {
   background-color: white;
   padding: 1.08rem 0.81rem;
-  width: 52.1875rem;
-  height: 74.363rem;
+  width: calc(52.1875rem - 1.62rem);
+  height: calc(74.363rem - 1.16rem);
   position: relative;
 }
 .article2 .project .design1 .article2_project_menu {
@@ -149,9 +151,10 @@ header h1:last-child {
 .article2 .project .design2 {
   background-color: white;
   padding: 1.08rem 0.81rem;
-  width: 52.1875rem;
-  height: 74.363rem;
+  width: calc(52.1875rem - 1.62rem);
+  height: calc(74.363rem - 1.16rem);
   position: relative;
+  margin-left: 9rem;
 }
 .article2 .project .design2 .article2_project_menu {
   font-size: 0.9375rem;
@@ -200,8 +203,8 @@ header h1:last-child {
 .article2 .project .design3 {
   background-color: white;
   padding: 1.08rem 0.81rem;
-  width: 52.1875rem;
-  height: 74.363rem;
+  width: calc(52.1875rem - 1.62rem);
+  height: calc(74.363rem - 1.16rem);
   position: relative;
   margin-top: 4.95rem;
 }
@@ -247,10 +250,10 @@ header h1:last-child {
 .article2 .project .design4 {
   background-color: white;
   padding: 1.08rem 0.81rem;
-  width: 52.1875rem;
-  height: 74.363rem;
+  width: calc(52.1875rem - 1.62rem);
+  height: calc(74.363rem - 1.16rem);
   position: relative;
-  margin-top: 4.95rem;
+  margin: 4.95rem 0 0 1rem;
 }
 .article2 .project .design4 .article2_project_menu {
   font-size: 0.9375rem;
@@ -296,14 +299,13 @@ header h1:last-child {
   margin-top: 1rem;
 }
 
-/* ------------------gogo------------------ */
 .article2 .project .design5 {
   background-color: white;
   padding: 1.08rem 0.81rem;
-  width: 52.1875rem;
-  height: 74.363rem;
+  width: calc(52.1875rem - 1.62rem);
+  height: calc(74.363rem - 1.16rem);
   position: relative;
-  margin-top: 4.95rem;
+  margin: 4.95rem 0 0 60rem;
 }
 .article2 .project .design5 .article2_project_menu {
   font-size: 0.9375rem;
@@ -329,11 +331,10 @@ header h1:last-child {
   position: absolute;
   top: 8.19rem;
   left: 3.7rem;
-  /* box-shadow: 3px 0px 12px 0px rgba(0, 0, 0, 0.25); */
 }
 .article2 .project .design5 h4 {
   font-size: 5.5rem;
-  margin-top: 15.5rem;
+  margin-top: 23.5rem;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -347,4 +348,111 @@ header h1:last-child {
 .article2 .project .design5 .tittle {
   font-size: 0.9375rem;
   margin-top: 1rem;
+}
+
+.article3 {
+  padding: 0 1rem;
+}
+.article3 h3 {
+  font-size: 14rem;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-top: -5rem;
+}
+.article3 .pp {
+  font-size: 11.875rem;
+  margin-top: -2.5rem;
+}
+.article3 p {
+  font-size: 4rem;
+  margin: 8.5rem 0 5.8rem;
+}
+.article3 p .opacity {
+  opacity: 50%;
+}
+
+.article4 {
+  padding: 0 1rem;
+  margin-bottom: 20.125rem;
+}
+.article4 h3 {
+  font-size: 14rem;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.article4 .pp {
+  font-size: 11.875rem;
+  margin: -2.5rem 0 7.19rem;
+}
+.article4 .article4_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 4.8125rem 0;
+}
+.article4 .article4_list .article4_skil {
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  width: 39.25rem;
+}
+.article4 .article4_list .article4_rate {
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  width: 19.125rem;
+}
+.article4 .article4_list .article4_view {
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  width: 44rem;
+}
+.article4 .article4_list .article4_link {
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.article4 .article4_list .article4_skil h5 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin: 0.75rem;
+}
+.article4 .article4_list .article4_skil p {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin: 0.75rem;
+}
+
+footer {
+  padding: 1rem;
+}
+footer h3 {
+  font-size: 14rem;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+footer .pp {
+  font-size: 11.875rem;
+  margin-top: -2.5rem;
+}
+footer .contact {
+  font-size: 4rem;
+  margin: 6rem 0 0 10.87rem;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+footer .mail {
+  font-size: 3.125rem;
+  margin: 0 0 5.12rem 10.87rem;
+  color: var(--main-color);
+}
+footer .mono {
+  width: 98.125rem;
+  margin: 0 auto;
+  text-align: center;
 }
