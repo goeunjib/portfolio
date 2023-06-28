@@ -392,12 +392,10 @@ header h1:last-child {
   width: calc(100% - 9.625rem);
   padding: 0 4.8125rem 0;
   font-size: 1.25rem;
+  position: relative;
 }
 .article4 .article4_list .flex {
   border-bottom: 1px solid black;
-}
-.article4 .article4_list .flex:hover {
-  background-color: #ddd;
 }
 .article4 .article4_list h5 {
   padding: 1rem 0;
@@ -417,6 +415,54 @@ header h1:last-child {
 }
 .article4 .article4_list .link {
   width: 5%;
+}
+.article4 .article4_list img {
+  width: 15%;
+  transform: translateY(-10%);
+  transition: 0.5s;
+  position: absolute;
+  right: 15%;
+  opacity: 0;
+}
+.article4 .article4_list .logo1 {
+  top: 1%;
+}
+.article4 .article4_list .logo2 {
+  top: 5%;
+}
+.article4 .article4_list .logo3 {
+  top: 22%;
+}
+.article4 .article4_list .logo4 {
+  top: 30%;
+}
+.article4 .article4_list .logo5 {
+  top: 45%;
+}
+.article4 .article4_list .logo6 {
+  top: 50%;
+}
+.article4 .article4_list .logo7 {
+  top: 55%;
+}
+.article4 .article4_list .logo8 {
+  top: 50%;
+}
+.article4 .article4_list .logo9 {
+  top: 55%;
+}
+.article4 .article4_list .logo10 {
+  top: 60%;
+}
+.article4 .article4_list .logo11 {
+  top: 65%;
+}
+.article4 .article4_list .flex:hover {
+  background-color: #ddd;
+}
+.article4 .article4_list .flex:hover + img {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 footer {

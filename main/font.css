@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: Azeret Mono;
+  src: url(./font/AzeretMono-VariableFont_wght.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: PP Editorial New;
+  src: url(./font/PPEditorialNew-Regular-BF644b214ff145f.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: PP Editorial New;
+  src: url(./font/PPEditorialNew-Ultrabold-BF644b21500840c.woff) format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: PP Editorial New;
+  src: url(./font/PPEditorialNew-Ultralight-BF644b21500d0c0.woff) format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
