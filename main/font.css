@@ -29,3 +29,17 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: Right Grotesk;
+  src: url(./font/RightGrotesk-CompactBlack.woff) format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Right Grotesk;
+  src: url(./font/RightGrotesk-Medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
