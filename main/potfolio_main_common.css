@@ -4,6 +4,19 @@
   --font-size-h3-Right: 14rem;
   --font-size-h3-pp: 11.875rem;
 }
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 10%;
+  background: #8f4141;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(240, 240, 240);
+}
 
 h1 {
   margin: 0;
@@ -28,7 +41,6 @@ p {
 body {
   font-family: Right Grotesk, sans-serif;
   margin: 0;
-  background-color: blue;
 }
 .flex {
   display: flex;
@@ -37,10 +49,15 @@ body {
 .mono {
   font-family: Azeret Mono, sans-serif;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .pp {
   font-family: PP Editorial New, sans-serif;
   font-weight: 200;
   text-transform: uppercase;
+}
+
+.ko {
+  font-family: 'Pretendard Variable', sans-serif;
 }

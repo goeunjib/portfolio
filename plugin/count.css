@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+
+.countup {
+  font-feature-settings: 'tnum';
+  font-variant-numeric: tabular-nums;
+  opacity: 0;
+}
+
+.countup--is-visible {
+  opacity: 1; /* show countup once JS has been initialized */
+}
+
+/* -------------------------------- 
+
+Utilities 
+
+-------------------------------- */
+
+.cd-sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
