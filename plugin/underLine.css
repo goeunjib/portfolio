@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+ul {
+  list-style: none;
+  cursor: pointer;
+}
+li {
+  width: 30%;
+  float: left;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+li:hover {
+  transition: all 0.3s ease;
+}
+li > span {
+  position: relative;
+}
+
+/*밑줄넣기 부분*/
+li > span::after {
+  content: '';
+  width: 0%;
+  left: 0;
+  height: 1px;
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  border-bottom: 2px solid #8f4141;
+  transition: all 0.3s ease;
+}
+li:hover > span::after {
+  content: '';
+  width: 100%;
+  left: 0px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  border-bottom: 2px solid #8f4141;
+  transition: all 0.3s ease;
+}
