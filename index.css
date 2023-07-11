@@ -283,8 +283,15 @@ header .header_menu .button:hover {
 }
 
 .article2 .project .design1 .tittle {
-  font-size: 0.9375rem;
+  font-size: 1.1rem;
   margin-top: 1rem;
+  line-height: 1.6;
+}
+.article2 .project .design1 .tittle-mono {
+  font-family: Azeret Mono, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #505050;
 }
 
 /*------------------ article2 .design2 ------------------*/
@@ -344,8 +351,15 @@ header .header_menu .button:hover {
 }
 
 .article2 .project .design2 .tittle {
-  font-size: 0.9375rem;
+  font-size: 1.1rem;
   margin-top: 1rem;
+  line-height: 1.6;
+}
+.article2 .project .design2 .tittle-mono {
+  font-family: Azeret Mono, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #505050;
 }
 
 /*------------------ article2 .design3 ------------------*/
@@ -399,10 +413,16 @@ header .header_menu .button:hover {
 }
 
 .article2 .project .design3 .tittle {
-  font-size: 0.9375rem;
+  font-size: 1.1rem;
   margin-top: 1rem;
+  line-height: 1.6;
 }
-
+.article2 .project .design3 .tittle-mono {
+  font-family: Azeret Mono, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #505050;
+}
 /*------------------ article2 .design4 ------------------*/
 .article2 .project .design4 {
   background-color: white;
@@ -439,8 +459,8 @@ header .header_menu .button:hover {
 
 .article2 .project .design4 .design4_img {
   position: absolute;
-  top: 8.19rem;
-  left: 3.7rem;
+  top: 5rem;
+  left: 2.2rem;
   /* box-shadow: 3px 0px 12px 0px rgba(0, 0, 0, 0.25); */
 }
 
@@ -456,12 +476,19 @@ header .header_menu .button:hover {
   float: right;
   font-weight: 500;
   text-transform: uppercase;
-  margin-top: -1rem;
+  margin-top: 0rem;
 }
 
 .article2 .project .design4 .tittle {
-  font-size: 0.9375rem;
-  margin-top: 1rem;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+.article2 .project .design4 .tittle-mono {
+  font-family: Azeret Mono, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #505050;
 }
 
 /*------------------ article2 .design5 ------------------*/
@@ -501,7 +528,7 @@ header .header_menu .button:hover {
 .article2 .project .design5 .design5_img {
   position: absolute;
   top: 8.19rem;
-  left: 3.7rem;
+  left: 2.5rem;
 }
 
 .article2 .project .design5 h4 {
@@ -520,8 +547,15 @@ header .header_menu .button:hover {
 }
 
 .article2 .project .design5 .tittle {
-  font-size: 0.9375rem;
+  font-size: 1.1rem;
   margin-top: 1rem;
+  line-height: 1.6;
+}
+.article2 .project .design5 .tittle-mono {
+  font-family: Azeret Mono, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #505050;
 }
 
 /*------------------ article3 ------------------*/

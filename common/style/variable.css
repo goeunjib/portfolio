@@ -38,6 +38,14 @@ p {
   margin: 0;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
 body {
   font-family: Right Grotesk, sans-serif;
   margin: 0;
