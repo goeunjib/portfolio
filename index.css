@@ -394,7 +394,7 @@ header .header_menu .button:hover {
   width: 49.93663rem;
   height: 41.625rem;
   border: 1px solid #000;
-  background: url(./images/article2-3-1.png) no-repeat 50% 60% / 98%;
+  background: url(./images/article2.gif) no-repeat 50% / cover;
 }
 
 .article2 .project .design3 h4 {
@@ -496,7 +496,7 @@ header .header_menu .button:hover {
   background-color: white;
   padding: 1.08rem 0.81rem;
   width: calc(52.1875rem - 1.62rem);
-  height: calc(74.363rem - 1.16rem);
+  height: calc(78.363rem - 1.16rem);
   position: relative;
   margin: 4.95rem 0 0 60rem;
 }
