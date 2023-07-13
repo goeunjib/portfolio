@@ -44,99 +44,6 @@ header h1 {
   margin-top: 1rem;
 }
 
-header h1:last-child {
-  font-size: 17rem;
-  margin: -3rem 0 8rem;
-}
-
-header .header_menu .button:hover {
-  transition: 0.3s;
-}
-
-header .header_menu p:nth-child(4) {
-  border-bottom: 1px solid #000;
-}
-header .header_menu p:nth-child(5) {
-  border-bottom: 1px solid #000;
-}
-header .header_menu p:nth-child(6) {
-  border-bottom: 1px solid #000;
-}
-header .header_menu p:nth-child(7) {
-  border-bottom: 1px solid #000;
-}
-
-/*------------------ header effect ------------------*/
-.button.fast {
-  --duration: 0.32s;
-}
-
-.button {
-  --text: #000;
-  --font-size: 16px;
-  --duration: 0.44s;
-  --move-hover: -4px;
-  --font-shadow: var(--font-size);
-  line-height: var(--font-size);
-  text-decoration: none;
-  font-size: 1rem;
-  color: #333;
-  box-shadow: var(--shadow);
-  transform: translateY(var(--y)) translateZ(0);
-  transition: transform var(--duration) ease, box-shadow var(--duration) ease;
-}
-
-.button div {
-  display: flex;
-  overflow: hidden;
-  text-shadow: 0 var(--font-shadow) 0 var(--text);
-}
-
-.button div span {
-  display: block;
-  backface-visibility: hidden;
-  font-style: normal;
-  transition: transform var(--duration) ease;
-  transform: translateY(var(--m)) translateZ(0);
-}
-
-.button div span:nth-child(1) {
-  transition-delay: 0.05s;
-}
-
-.button div span:nth-child(2) {
-  transition-delay: 0.1s;
-}
-
-.button div span:nth-child(3) {
-  transition-delay: 0.15s;
-}
-
-.button div span:nth-child(4) {
-  transition-delay: 0.2s;
-}
-
-.button div span:nth-child(5) {
-  transition-delay: 0.25s;
-}
-
-.button div span:nth-child(6) {
-  transition-delay: 0.3s;
-}
-
-.button div span:nth-child(7) {
-  transition-delay: 0.35s;
-}
-
-.button:hover {
-  --y: var(--move-hover);
-  --shadow: var(--shadow-hover);
-}
-
-.button:hover span {
-  --m: calc(var(--font-size) * -1);
-}
-
 /*------------------ article1 ------------------*/
 .article1 {
   margin: 0 0.94rem 5.25rem;
@@ -598,19 +505,24 @@ header .header_menu p:nth-child(7) {
 }
 
 .article3 p {
-  animation: typing-text 3s steps(30);
+  animation: typing-text 10s steps(50);
+  animation-iteration-count: infinite;
   overflow: hidden;
   border-right: 3px solid #000;
 }
 
 @keyframes typing-text {
-  from {
+  0% {
     width: 0;
     background-color: var(--main-color);
   }
 
-  to {
+  80% {
+    width: 100%;
     background-color: white;
+  }
+
+  100% {
   }
 }
 
@@ -685,47 +597,56 @@ header .header_menu p:nth-child(7) {
 }
 
 .article4 .article4_list .logo1 {
-  top: 1%;
+  top: -10%;
 }
 
 .article4 .article4_list .logo2 {
-  top: 5%;
+  top: -5%;
 }
 
 .article4 .article4_list .logo3 {
-  top: 22%;
+  top: -3%;
 }
 
 .article4 .article4_list .logo4 {
-  top: 30%;
+  top: 5%;
 }
 
 .article4 .article4_list .logo5 {
-  top: 45%;
+  top: 13%;
 }
 
 .article4 .article4_list .logo6 {
-  top: 50%;
+  top: 20%;
 }
 
 .article4 .article4_list .logo7 {
-  top: 55%;
+  top: 25%;
 }
 
 .article4 .article4_list .logo8 {
-  top: 50%;
+  top: 40%;
 }
 
 .article4 .article4_list .logo9 {
-  top: 55%;
+  top: 48%;
 }
 
 .article4 .article4_list .logo10 {
-  top: 60%;
+  top: 55%;
 }
 
 .article4 .article4_list .logo11 {
+  top: 55%;
+}
+.article4 .article4_list .logo12 {
+  top: 60%;
+}
+.article4 .article4_list .logo13 {
   top: 65%;
+}
+.article4 .article4_list .logo14 {
+  top: 70%;
 }
 
 .article4 .article4_list .flex:hover {
