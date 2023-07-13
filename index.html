@@ -28,7 +28,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="home">
     <div class="header_menu flex mono">
       <p>eunji go</p>
       <p>the Department of Industrial Design</p>
@@ -36,10 +36,10 @@
         <p>available now</p>
         <p>goeunji0948@naver.com</p>
       </div>
-      <p class="button">home</p>
-      <p class="button">work</p>
-      <p class="button">about</p>
-      <p class="button">contact</p>
+      <p><a href="#home" class="button">home</a></p>
+      <p><a href="#work" class="button">work</a></p>
+      <p><a href="#about" class="button">about</a></p>
+      <p><a href="#contact" class="button">contact</a></p>
     </div>
     <p class="position ko">어떠한 선택을 하더라도 후회하지 않는 것이 저의 인생 좌우명입니다. 디자인을 할 때에도 후회하지 않기 위해 다양한 것들을 시도해보고 싶습니다.</p>
     <h1>Industrial</h1>
@@ -65,8 +65,9 @@
       다양한 작업으로 자신감이 있는 분야를 알게 되었고, 이제는 혼자가 아닌 팀으로 역활을 수행하고 싶습니다.
     </p>
     <p class="position2 ko">끈질기게 프로젝트가 끝날때 까지 열심히 하겠습니다.</p>
+    <div></div>
     <h3>recent</h3>
-    <h3 class="pp">work</h3>
+    <h3 class="pp" id="work">work</h3>
     <div class="project">
       <div class="design1">
         <div class="article2_project_menu flex mono">
@@ -76,8 +77,9 @@
           <p>DEVELOPMENT</p>
         </div>
         <div class="blank"></div>
-        <img src="./images/article2-1-1.png" alt="project1" class="design1_img1">
-        <img src="./images/article2-1-2.png" alt="project1" class="design1_img2">
+        <a href="./project_01/project_01.html" target="_blank">
+          <img src="./images/article2-1.png" alt="project1" class="design1_img1">
+        </a>
         <h4>SANGJU CITY</h4>
         <p class="mono view"><a href="./project_01/project_01.html" target="_blank">VIEW PROJECT</a></p>
         <p class="ko tittle">이해가 깊을수록 관광의 즐거움도 한층 더 커질 것입니다.<br>경상북도 상주시의 홈페이지가 관광하는 사람들이 접하기 쉽고 지역내에서 가능한 체험들 위주로 홍보하기
@@ -127,7 +129,9 @@
           <p>DEVELOPMENT</p>
         </div>
         <div class="blank"></div>
-        <img src="./images/article2-4-1.png" alt="project1" class="design4_img">
+        <a href="./project_02/project_02.html" target="_blank">
+          <img src="./images/article2-4-1.png" alt="project1" class="design4_img">
+        </a>
         <h4>YG entertainment</h4>
         <p class="mono view"><a href="./project_02/project_02.html" target="_blank">VIEW PROJECT</a></p>
         <p class="ko tittle">아티스트 고유의 음악색을 중요시하는 분위기로 변화하고 있습니다. <br>대한민국 가요계의 한 획을 그은 그룹 서태지와 아이들 출신
@@ -144,7 +148,9 @@
           <p>DEVELOPMENT</p>
         </div>
         <div class="blank"></div>
-        <img src="./images/article2-5-1.png" alt="project1" class="design5_img">
+        <a href="./project_03/project_03.html" target="_blank">
+          <img src="./images/article2-5-1.png" alt="project1" class="design5_img">
+        </a>
         <h4>DHL redesign</h4>
         <p class="mono view"><a href="./project_03/project_03.html" target="_blank">VIEW PROJECT</a></p>
         <p class="ko tittle">DHL을 사용하는 전세계 사용자들은 홈페이지를 통해 예약을 진행하기에 많은 사람들이 사용하기 편하도록 리디자인하였습니다. <br> <br><span
@@ -154,7 +160,7 @@
     </div>
   </article>
 
-  <article class="article3">
+  <article class="article3" id="about">
     <h3>potential</h3>
     <h3 class="pp">& tech stack</h3>
     <p class="mono">HTML5 & CSS3 <span class="opacity">[ semantic tag / responsive web ] -</span> JavaScript & jQuery
@@ -255,7 +261,7 @@
     </div>
   </article>
 
-  <footer>
+  <footer id="contact">
     <h3>let’s start</h3>
     <h3 class="pp">a project</h3>
     <p class="contact">contact me</p>
