@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="../common/style/font.css">
 
   <!-- variable -->
-  <link rel="stylesheet" href="./project.css">
+  <link rel="stylesheet" href="./projectCommon.css">
   <link rel="stylesheet" href="../common/style/header.css">
 </head>
 
@@ -44,12 +44,10 @@
   <article class="article1">
     <h1>sangju city</h1>
     <h1 class="pp">web publishing</h1>
-    <a href="../project_01/project_01.html" target="_blank" class="img-box">
-      <div class="box">
-        <div class="blank"></div>
-        <img src="./img/project_01.png" alt="project_01">
-      </div>
-    </a>
+    <div class="box">
+      <div class="blank"></div>
+      <img src="./img/project_01.png" alt="project_01">
+    </div>
     <p class="ko tittle">이해가 깊을수록 관광의 즐거움도 한층 더 커질 것입니다.<br>경상북도 상주시의 홈페이지가 관광하는 사람들이 접하기 쉽고 지역내에서 가능한 체험들 위주로 홍보하기
       위해 관광 상주 홈페이지를 리디자인하였습니다.<br> <br>
       <span class="mono">The deeper your understanding, the
@@ -60,27 +58,57 @@
   </article>
 
   <article class="article2">
-    <h1 class="pp">explanation</h1>
+    <div class="article2-tittle">
+      <h1 class="pp">explanation</h1>
+      <p class="shotCut ko"><a href="../project_01/project_01.html" target="_blank">관광 상주 홈페이지 바로가기</a></p>
+    </div>
     <div class="target">
       <h2>target</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas corrupti molestiae incidunt, iure distinctio
-        perferendis quos, ratione sunt in modi ad? Vel velit unde ipsum magni ea distinctio sequi sapiente!</p>
+      <p class="ko">관광객들에게 정보 제공을 함으로 도움이 되고, 지역 홍보를 위한 홈페이지인 '관광 상주'는 홈페이지 방문수가 현저히 적습니다. <br> <br>관광 지역을 홍보하기 위함으로
+        만들어진
+        홈페이지는 지역 민원
+        홈페이지에
+        섞여 사용자가 접근하기 어려운 경로에 있으며 PC버전과 테블릿버전, <br>모바일버전이 나눠져 있지않아 정보를 제공하는데 여러 어려움이 있습니다.<br> <br>이런 문제를 해결하기 위해 테블릿 버전과
+        모바일
+        버전을
+        제공하고 관광자들에게 필요한 정보를 정리해 다양한 관광 방문자가 늘어나는 것을 기대합니다. </p>
     </div>
     <div class="guide">
       <h2>style guide</h2>
-      <img src="./img/" alt="style guide img">
+      <img src="./img/project_01_style.png" alt="style guide img">
     </div>
     <div class="skill">
       <h2>used skill</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas corrupti molestiae incidunt, iure distinctio
-        perferendis quos, ratione sunt in modi ad? Vel velit unde ipsum magni ea distinctio sequi sapiente!</p>
+      <p class="ko">전체적인 구조가 퍼즐식으로 구성되어 있어 다양한 정보를 제공하면서 자세한 내용은 원하는 부분만 확인할 수 있습니다. <br> <br>퍼즐식 구조를 표현하기 위해 display:
+        grid 값을 사용해 한눈에 다양한 코스를 추천 가능하게 했습니다. <br> <br>자세한 내용들은 hover을
+        사용해 원하는 정보만 확인할 수 있고, 그렇지 않은 내용은 overflow: hidden 값을 사용해 보이지 않게 해 번잡함을 줄였습니다.</p>
     </div>
     <div class="problem">
-      <h2>problem and solution</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas corrupti molestiae incidunt, iure distinctio
-        perferendis quos, ratione sunt in modi ad? Vel velit unde ipsum magni ea distinctio sequi sapiente!</p>
+      <h2>problem & solution</h2>
+      <p class="ko">
+        - Problem : 다양한 관광객들이 방문하기에 홈페이지의 버전이 없어 접근하기 어렵습니다. <br>
+        <span>-</span> Solution : PC버전에 테블릿 버전과 모바일 버전을 추가해 다양한 접근을 기대합니다.
+        <br> <br>
+        - Problem : 홈페이지에 사용된 이미지들이 비율을 잃어 화질이 깨져 장소 홍보에 역효과를 주었습니다. <br>
+        <span>-</span> Solution : 각 버전마다 사용되는 이미지의 크기를 지정해 사용하였습니다.
+      </p>
     </div>
   </article>
+
+  <footer id="contact">
+    <h3>let’s start</h3>
+    <h3 class="pp">a project</h3>
+    <p class="contact">contact me</p>
+    <p class="mail"><span>goeunji0948@naver.com</span></p>
+    <p class="mono">2020_Department of Industrial Design Club Vice President / 2021_ Startup of Goods Design
+      Funding_tumblbug / 2021_Industrial Design Department Student President /
+      2022_Amateur oil painting exhibition / 2022_26th Hyeopseong University Industrial Design Department Graduation
+      Exhibition</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
+  </script>
 </body>
 
 </html>

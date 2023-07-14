@@ -1,0 +1,322 @@
+@charset "uft-8";
+/*------------------ common ------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #8f4141;
+  --font-size-h3-Right: 14rem;
+  --font-size-h3-pp: 11.875rem;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 10%;
+  background: #8f4141;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(240, 240, 240);
+}
+
+h1 {
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+h4 {
+  margin: 0;
+}
+h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+body {
+  font-family: Right Grotesk, sans-serif;
+  margin: 0;
+}
+.flex {
+  display: flex;
+}
+
+.mono {
+  font-family: Azeret Mono, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.pp {
+  font-family: PP Editorial New, sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.ko {
+  font-family: "Pretendard Variable", sans-serif;
+}
+
+/*------------------ header ------------------*/
+header {
+  padding: 1rem;
+  position: relative;
+}
+
+header .header_menu {
+  width: calc(100% - 2rem);
+  justify-content: space-between;
+  position: fixed;
+  top: 1rem;
+  z-index: 999;
+  align-items: center;
+}
+
+header .header_menu p {
+  font-size: 0.87rem;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 5px;
+}
+
+header .header_menu .header_mail p:last-child {
+  font-size: 0.813rem;
+}
+
+header .position {
+  width: 17.75rem;
+  position: absolute;
+  top: 4.06rem;
+  right: 12.81rem;
+  font-size: 0.9375rem;
+}
+
+header h1 {
+  font-size: 20rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+/*------------------ article1 ------------------*/
+.article1 {
+  padding: 1rem;
+  position: relative;
+  height: 130vh;
+}
+
+.article1 h1 {
+  font-size: 12rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  color: var(--main-color);
+}
+
+.article1 h1:nth-child(2) {
+  font-size: 10rem;
+  margin: 0;
+}
+
+.article1 .box {
+  width: 53rem;
+  height: 25rem;
+  border: 1px solid #000;
+  position: absolute;
+  top: 25rem;
+  right: 3rem;
+  z-index: -1;
+}
+
+.article1 .box img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.article1 .tittle {
+  width: 38rem;
+  position: absolute;
+  top: 40rem;
+  left: 10rem;
+}
+
+.article1 p {
+  font-size: 1.1rem;
+  line-height: 150%;
+}
+
+/*------------------ article2 ------------------*/
+.article2 {
+  padding: 1rem;
+}
+
+.article2 .article2-tittle {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-right: 150px;
+}
+.article2 h1 {
+  font-size: 10rem;
+  color: var(--main-color);
+}
+
+.article2 h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.article2 .target,
+.article2 .guide,
+.article2 .skill,
+.article2 .problem {
+  width: 100rem;
+  padding: 1rem 1rem 2rem 2rem;
+  margin: 0 0 3rem 5rem;
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: 2fr 5fr 0.5fr;
+  grid-template-rows: 100px 1fr;
+}
+
+.article2 .target:hover h2,
+.article2 .guide:hover h2,
+.article2 .skill:hover h2,
+.article2 .problem:hover h2 {
+  color: var(--main-color);
+}
+.article2 .target:hover,
+.article2 .guide:hover,
+.article2 .skill:hover,
+.article2 .problem:hover {
+  border: 1px solid var(--main-color);
+}
+
+.article2 .target p,
+.article2 .guide img,
+.article2 .skill p,
+.article2 .problem p {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  line-height: 150%;
+  font-size: 1.1rem;
+}
+
+.article2 .guide img {
+  width: 100%;
+}
+
+.article2 .problem span {
+  opacity: 0;
+}
+
+.article2 .shotCut a {
+  border: 1px solid #000;
+  padding: 20px 30px;
+  margin-left: 5rem;
+  transition: 0.25s;
+  text-decoration: none;
+}
+
+.article2 .shotCut:hover a {
+  background-color: #000;
+  color: white;
+  font-weight: normal;
+}
+
+/*------------------ footer ------------------*/
+footer {
+  display: inline-block;
+  position: absolute;
+  bottom: -210rem;
+  padding: 1rem;
+}
+
+footer h3 {
+  font-size: 14rem;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+footer .pp {
+  font-size: 11.875rem;
+  margin-top: -2.5rem;
+}
+
+footer .contact {
+  font-size: 4rem;
+  margin: 6rem 0 0 10.87rem;
+  padding: 10px;
+  text-transform: uppercase;
+  color: var(--main-color);
+  transition: all 0.3s ease;
+}
+
+footer .mail span::after {
+  content: "";
+  width: 0%;
+  left: 10.87rem;
+  height: 1px;
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  border-bottom: 2px solid #8f4141;
+  transition: all 0.4s ease;
+}
+
+footer .mail:hover span::after {
+  content: "";
+  width: 30%;
+  left: 10.87rem;
+  height: 1px;
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  border-bottom: 2px solid #8f4141;
+  transition: all 0.4s ease;
+}
+
+footer .contact:hover + .mail span::after {
+  content: "";
+  width: 30%;
+  left: 10.87rem;
+  height: 1px;
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  border-bottom: 2px solid #8f4141;
+  transition: all 0.4s ease;
+}
+
+footer .mail {
+  font-size: 3.125rem;
+  margin: 0 0 5.12rem 10.87rem;
+  padding: 10px;
+  color: var(--main-color);
+  line-height: 1.5;
+}
+
+footer .mono {
+  width: 98.125rem;
+  margin: 0 154px;
+  text-align: center;
+}

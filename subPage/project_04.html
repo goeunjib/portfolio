@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- open graph -->
+  <meta property="og:title" content="Eunji Go">
+  <meta property="og:description" content="Eunji Go">
+  <meta property="og:image" content="https://goeunjib.github.io/portfolio/images/open-graph.png">
+  <meta property="og:url" content="https://goeunjib.github.io/portfolio/index.html">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>project_04YG ENTERTAINMENT</title>
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+
+  <!-- fonts -->
+  <link rel="stylesheet" href="../common/style/font.css">
+
+  <!-- variable -->
+  <link rel="stylesheet" href="./projectCommon.css">
+  <link rel="stylesheet" href="../common/style/header.css">
+
+  <link rel="stylesheet" href="./project4.css">
+</head>
+
+<body>
+  <header>
+    <div class="header_menu flex mono">
+      <p>eunji go</p>
+      <p>the Department of Industrial Design</p>
+      <div class="header_mail">
+        <p>available now</p>
+        <p>goeunji0948@naver.com</p>
+      </div>
+      <p><a href="../index.html#home" class="button">home</a></p>
+      <p><a href="../index.html#work" class="button">work</a></p>
+      <p><a href="../index.html#about" class="button">about</a></p>
+      <p><a href="../index.html#contact" class="button">contact</a></p>
+    </div>
+  </header>
+  <article class="article1">
+    <h1>YG ENTERTAINMENT</h1>
+    <h1 class="pp">web publishing</h1>
+    <div class="box">
+      <div class="blank"></div>
+      <img src="./img/project_04.png" alt="project_01">
+    </div>
+    <p class="ko tittle">아티스트 고유의 음악색을 중요시하는 분위기로 변화하고 있습니다. <br>
+      대한민국 가요계의 한 획을 그은 그룹 서태지와 아이들 출신 양현석이 설립한 <br>엔터테인먼트 회사입니다.
+      <br> <br>
+      <span class="mono">It is changing to an atmosphere that values ​​the artist's unique music color.
+        It is an entertainment company founded by Yang Hyun-suk, a former member of Seo Taiji and Boys, who made a mark
+        in the Korean music industry.</span>
+    </p>
+  </article>
+
+  <article class="article2">
+    <div class="article2-tittle">
+      <h1 class="pp">explanation</h1>
+      <p class="shotCut ko"><a href="../project_01/project_01.html" target="_blank">YG ENTERTAINMENT 바로가기</a></p>
+    </div>
+    <div class="target">
+      <h2>target</h2>
+      <p class="ko">YG ENTERTAINMENT의 홈페이지는 다양한 매력을 가진 연예인들을 홍보하고, 알리기 위함이지만 홈페이지의 구성과 디자인을 보았을 때 <br>사용자의 사용성이 아쉬운
+        부분이
+        많았습니다. <br> <br>K-pop의 열풍과 트렌드에 예민한 직종인 연예인들의 ENTERTAINMENT인 만큼 홈페이지도 민감하게 트렌드에 반응해야 한다고 생각합니다.</p>
+    </div>
+    <div class="guide">
+      <h2>style guide</h2>
+      <img src="./img/project_04_style.png" alt="style guide img">
+    </div>
+    <div class="skill">
+      <h2>used skill</h2>
+      <p class="ko">홈페이지에 방문자의 평균 나이을 고려해 디자인 되어 정보 제공하지 않는 쉬어가는 공간에선 JavaScript를 넣어 단조로운 분위기를 화사하게 만들었습니다. <br> <br>
+        연예인들의 프로필은 정해진 비율로만 진행하기엔 각자의 개성이 다르고 시각적으로 단조로워 Masonry 벽돌 형식을 사용하였습니다.
+      </p>
+    </div>
+    <div class="problem">
+      <h2>problem & solution</h2>
+      <p class="ko">
+        - Problem : motion과 effect가 없는 예전 디자인으로 되어 있어 트렌드를 따라가지 못한 디자인입니다. <br>
+        <span>-</span> Solution : 디자인은 심플하게 디자인하였지만 폰트와 도형의 effect로 .
+        <br> <br>
+        - Problem : 홈페이지에 사용된 이미지들이 비율을 잃어 화질이 깨져 장소 홍보에 역효과를 주었습니다. <br>
+        <span>-</span> Solution : 각 버전마다 사용되는 이미지의 크기를 지정해 사용하였습니다.
+      </p>
+    </div>
+  </article>
+
+  <footer id="contact">
+    <h3>let’s start</h3>
+    <h3 class="pp">a project</h3>
+    <p class="contact">contact me</p>
+    <p class="mail"><span>goeunji0948@naver.com</span></p>
+    <p class="mono">2020_Department of Industrial Design Club Vice President / 2021_ Startup of Goods Design
+      Funding_tumblbug / 2021_Industrial Design Department Student President /
+      2022_Amateur oil painting exhibition / 2022_26th Hyeopseong University Industrial Design Department Graduation
+      Exhibition</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
+  </script>
+</body>
+
+</html>

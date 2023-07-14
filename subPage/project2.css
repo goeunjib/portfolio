@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.article1 .box {
+  height: 43rem;
+}
+
+.article1 .box img {
+  width: 75%;
+  margin-top: 30px;
+}
