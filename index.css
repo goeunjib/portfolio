@@ -1,4 +1,5 @@
 @charset 'UTF-8';
+
 html {
   scroll-behavior: smooth;
 }
@@ -148,7 +149,12 @@ header h1 {
   padding: 1.08rem 0.81rem;
   width: calc(52.1875rem - 1.62rem);
   height: calc(74.363rem - 1.16rem);
+  transition: .3s;
   position: relative;
+}
+
+.article2 .project .design1:hover {
+  scale: 1.02;
 }
 
 .article2 .project .design1 .article2_project_menu {
@@ -209,6 +215,7 @@ header h1 {
   margin-top: 1rem;
   line-height: 1.6;
 }
+
 .article2 .project .design1 .tittle-mono {
   font-family: Azeret Mono, Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -222,8 +229,13 @@ header h1 {
   padding: 1.08rem 0.81rem;
   width: calc(52.1875rem - 1.62rem);
   height: calc(74.363rem - 1.16rem);
+  transition: .3s;
   position: relative;
   margin-left: 9rem;
+}
+
+.article2 .project .design2:hover {
+  scale: 1.02;
 }
 
 .article2 .project .design2 .article2_project_menu {
@@ -278,6 +290,7 @@ header h1 {
   margin-top: 1rem;
   line-height: 1.6;
 }
+
 .article2 .project .design2 .tittle-mono {
   font-family: Azeret Mono, Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -340,20 +353,27 @@ header h1 {
   margin-top: 1rem;
   line-height: 1.6;
 }
+
 .article2 .project .design3 .tittle-mono {
   font-family: Azeret Mono, Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1rem;
   color: #505050;
 }
+
 /*------------------ article2 .design4 ------------------*/
 .article2 .project .design4 {
   background-color: white;
   padding: 1.08rem 0.81rem;
   width: calc(52.1875rem - 1.62rem);
   height: calc(74.363rem - 1.16rem);
+  transition: .3s;
   position: relative;
-  margin: 4.95rem 0 0 1rem;
+  margin: 4.95rem 0 0 2rem;
+}
+
+.article2 .project .design4:hover {
+  scale: 1.02;
 }
 
 .article2 .project .design4 .article2_project_menu {
@@ -407,6 +427,7 @@ header h1 {
   margin-top: 1.5rem;
   line-height: 1.6;
 }
+
 .article2 .project .design4 .tittle-mono {
   font-family: Azeret Mono, Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -420,8 +441,13 @@ header h1 {
   padding: 1.08rem 0.81rem;
   width: calc(52.1875rem - 1.62rem);
   height: calc(78.363rem - 1.16rem);
+  transition: .3s;
   position: relative;
   margin: 4.95rem 0 0 60rem;
+}
+
+.article2 .project .design5:hover {
+  scale: 1.02;
 }
 
 .article2 .project .design5 .article2_project_menu {
@@ -474,6 +500,7 @@ header h1 {
   margin-top: 1rem;
   line-height: 1.6;
 }
+
 .article2 .project .design5 .tittle-mono {
   font-family: Azeret Mono, Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -523,8 +550,7 @@ header h1 {
     background-color: white;
   }
 
-  100% {
-  }
+  100% {}
 }
 
 .article3 p .opacity {
@@ -640,12 +666,15 @@ header h1 {
 .article4 .article4_list .logo11 {
   top: 55%;
 }
+
 .article4 .article4_list .logo12 {
   top: 60%;
 }
+
 .article4 .article4_list .logo13 {
   top: 65%;
 }
+
 .article4 .article4_list .logo14 {
   top: 70%;
 }
@@ -654,7 +683,7 @@ header h1 {
   background-color: #ddd;
 }
 
-.article4 .article4_list .flex:hover + img {
+.article4 .article4_list .flex:hover+img {
   opacity: 1;
   transform: translateY(0);
 }
@@ -708,7 +737,7 @@ footer .mail:hover span::after {
   transition: all 0.4s ease;
 }
 
-footer .contact:hover + .mail span::after {
+footer .contact:hover+.mail span::after {
   content: "";
   width: 30%;
   left: 10.87rem;
