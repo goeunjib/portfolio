@@ -535,7 +535,7 @@ header h1 {
 }
 
 .article3 p {
-  animation: typing-text 10s steps(50);
+  /* animation: typing-text 10s steps(50); */
   animation-iteration-count: infinite;
   overflow: hidden;
   border-right: 3px solid #000;
@@ -603,6 +603,7 @@ header h1 {
 
 .article4 .article4_list .first {
   width: 40%;
+  text-transform: none;
 }
 
 .article4 .article4_list .rate {
@@ -639,11 +640,11 @@ header h1 {
 }
 
 .article4 .article4_list .logo4 {
-  top: 5%;
+  top: 8%;
 }
 
 .article4 .article4_list .logo5 {
-  top: 13%;
+  top: 15%;
 }
 
 .article4 .article4_list .logo6 {
@@ -679,6 +680,9 @@ header h1 {
 }
 
 .article4 .article4_list .logo14 {
+  top: 70%;
+}
+.article4 .article4_list .logo15 {
   top: 70%;
 }
 

@@ -1,9 +1,13 @@
 @charset "UTF-8";
 .article1 .box {
-  height: 43rem;
+  height: 30rem;
 }
 
 .article1 .box img {
-  width: 75%;
+  width: 70%;
   margin-top: 30px;
+}
+
+footer {
+  bottom: -210rem;
 }

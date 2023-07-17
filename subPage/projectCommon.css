@@ -217,7 +217,7 @@ header h1 {
 .article2 .problem p {
   grid-row: 2/3;
   grid-column: 2/3;
-  line-height: 150%;
+  line-height: 180%;
   font-size: 1.1rem;
 }
 
@@ -225,34 +225,45 @@ header h1 {
   width: 100%;
 }
 
-.article2 .problem span {
+.article2 .problem .opacity {
   opacity: 0;
 }
 
-.article2 .shotCut a {
-  border: 1px solid #000;
-  padding: 20px 30px;
-  margin-left: 5rem;
-  transition: 0.25s;
-  text-decoration: none;
-}
-
-.article2 .shotCut:hover a {
-  background-color: #000;
-  color: white;
-  font-weight: normal;
+.article2 .problem span {
+  font-weight: bold;
+  border-bottom: 2px solid #000;
 }
 
 /*------------------ footer ------------------*/
 footer {
   display: inline-block;
   position: absolute;
-  bottom: -210rem;
+  bottom: -190rem;
   padding: 0 0 1rem 1rem;
 }
 
+footer .shotCut {
+  margin-top: -3rem;
+}
+
+footer .shotCut a {
+  padding: 20px 30px;
+  margin-left: 5rem;
+  transition: 0.25s;
+  text-decoration: none;
+  color: white;
+  background-color: #000;
+}
+
+footer .shotCut:hover a {
+  background-color: white;
+  color: #000;
+  font-weight: bold;
+  border: 1px solid #000;
+}
+
 footer h3 {
-  font-size: 14rem;
+  font-size: 4rem;
   text-transform: uppercase;
   color: var(--main-color);
 }
@@ -264,7 +275,7 @@ footer .pp {
 
 footer .contact {
   font-size: 4rem;
-  margin: 6rem 0 0 10.87rem;
+  margin: 1rem 0 0 10.87rem;
   padding: 10px;
   text-transform: uppercase;
   color: var(--main-color);
@@ -279,7 +290,7 @@ footer .mail span::after {
   display: block;
   position: absolute;
   margin-top: 3px;
-  border-bottom: 2px solid #8f4141;
+  border-bottom: 2px solid var(--main-color);
   transition: all 0.4s ease;
 }
 
@@ -291,7 +302,7 @@ footer .mail:hover span::after {
   display: block;
   position: absolute;
   margin-top: 3px;
-  border-bottom: 2px solid #8f4141;
+  border-bottom: 2px solid var(--main-color);
   transition: all 0.4s ease;
 }
 
@@ -303,7 +314,7 @@ footer .contact:hover + .mail span::after {
   display: block;
   position: absolute;
   margin-top: 3px;
-  border-bottom: 2px solid #8f4141;
+  border-bottom: 2px solid var(--main-color);
   transition: all 0.4s ease;
 }
 
