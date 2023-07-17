@@ -248,7 +248,7 @@ footer {
   display: inline-block;
   position: absolute;
   bottom: -210rem;
-  padding: 1rem;
+  padding: 0 0 1rem 1rem;
 }
 
 footer h3 {

@@ -147,9 +147,10 @@ header h1 {
 .article2 .project .design1 {
   background-color: white;
   padding: 1.08rem 0.81rem;
+  margin-bottom: 2rem;
   width: calc(52.1875rem - 1.62rem);
   height: calc(74.363rem - 1.16rem);
-  transition: .3s;
+  transition: 0.3s;
   position: relative;
 }
 
@@ -227,9 +228,10 @@ header h1 {
 .article2 .project .design2 {
   background-color: white;
   padding: 1.08rem 0.81rem;
+  margin-bottom: 2rem;
   width: calc(52.1875rem - 1.62rem);
   height: calc(74.363rem - 1.16rem);
-  transition: .3s;
+  transition: 0.3s;
   position: relative;
   margin-left: 9rem;
 }
@@ -305,7 +307,7 @@ header h1 {
   width: calc(52.1875rem - 1.62rem);
   height: calc(74.363rem - 1.16rem);
   position: relative;
-  margin-top: 4.95rem;
+  margin-top: 2.95rem;
 }
 
 .article2 .project .design3 .article2_project_menu {
@@ -367,9 +369,9 @@ header h1 {
   padding: 1.08rem 0.81rem;
   width: calc(52.1875rem - 1.62rem);
   height: calc(74.363rem - 1.16rem);
-  transition: .3s;
+  transition: 0.3s;
   position: relative;
-  margin: 4.95rem 0 0 2rem;
+  margin: 2.95rem 0 0 2rem;
 }
 
 .article2 .project .design4:hover {
@@ -441,7 +443,7 @@ header h1 {
   padding: 1.08rem 0.81rem;
   width: calc(52.1875rem - 1.62rem);
   height: calc(78.363rem - 1.16rem);
-  transition: .3s;
+  transition: 0.3s;
   position: relative;
   margin: 4.95rem 0 0 60rem;
 }
@@ -550,7 +552,8 @@ header h1 {
     background-color: white;
   }
 
-  100% {}
+  100% {
+  }
 }
 
 .article3 p .opacity {
@@ -683,7 +686,7 @@ header h1 {
   background-color: #ddd;
 }
 
-.article4 .article4_list .flex:hover+img {
+.article4 .article4_list .flex:hover + img {
   opacity: 1;
   transform: translateY(0);
 }
@@ -737,7 +740,7 @@ footer .mail:hover span::after {
   transition: all 0.4s ease;
 }
 
-footer .contact:hover+.mail span::after {
+footer .contact:hover + .mail span::after {
   content: "";
   width: 30%;
   left: 10.87rem;
