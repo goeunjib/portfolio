@@ -190,7 +190,7 @@ header h1 {
 .article2 .skill,
 .article2 .problem {
   width: 100rem;
-  padding: 1rem 1rem 2rem 2rem;
+  padding: 1rem 2rem;
   margin: 0 0 3rem 5rem;
   border: 1px solid #000;
   display: grid;
@@ -234,36 +234,43 @@ header h1 {
   border-bottom: 2px solid #000;
 }
 
-/*------------------ footer ------------------*/
-footer {
-  display: inline-block;
-  position: absolute;
-  bottom: -190rem;
-  padding: 0 0 1rem 1rem;
+.article2 .shotcut {
+  border: 1px solid #000;
+  background-color: #000;
+  font-size: 2rem;
+  width: 100rem;
+  padding: 1rem 2rem;
+  margin: 0 0 3rem 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-footer .shotCut {
-  margin-top: -3rem;
-}
-
-footer .shotCut a {
-  padding: 20px 30px;
-  margin-left: 5rem;
-  transition: 0.25s;
+.article2 .shotcut p a {
   text-decoration: none;
   color: white;
-  background-color: #000;
+  transition: 0.3s;
 }
 
-footer .shotCut:hover a {
-  background-color: white;
-  color: #000;
-  font-weight: bold;
+.article2 .shotcut:hover {
   border: 1px solid #000;
+  background-color: #fff;
+}
+
+.article2 .shotcut:hover p a {
+  text-decoration: none;
+  color: #000;
+}
+
+/*------------------ footer ------------------*/
+footer {
+  padding: 1rem;
 }
 
 footer h3 {
-  font-size: 4rem;
+  font-size: 14rem;
   text-transform: uppercase;
   color: var(--main-color);
 }
@@ -275,7 +282,7 @@ footer .pp {
 
 footer .contact {
   font-size: 4rem;
-  margin: 1rem 0 0 10.87rem;
+  margin: 6rem 0 0 10.87rem;
   padding: 10px;
   text-transform: uppercase;
   color: var(--main-color);
@@ -290,7 +297,7 @@ footer .mail span::after {
   display: block;
   position: absolute;
   margin-top: 3px;
-  border-bottom: 2px solid var(--main-color);
+  border-bottom: 2px solid #8f4141;
   transition: all 0.4s ease;
 }
 
@@ -302,7 +309,7 @@ footer .mail:hover span::after {
   display: block;
   position: absolute;
   margin-top: 3px;
-  border-bottom: 2px solid var(--main-color);
+  border-bottom: 2px solid #8f4141;
   transition: all 0.4s ease;
 }
 
@@ -314,7 +321,7 @@ footer .contact:hover + .mail span::after {
   display: block;
   position: absolute;
   margin-top: 3px;
-  border-bottom: 2px solid var(--main-color);
+  border-bottom: 2px solid #8f4141;
   transition: all 0.4s ease;
 }
 

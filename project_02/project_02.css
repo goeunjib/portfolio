@@ -12,6 +12,7 @@ body {
 
 header {
   padding: 0 1rem 0 1rem;
+  color: #000;
 }
 
 header .header_menu {
@@ -32,25 +33,50 @@ header .header_menu p {
 
 /****** article1 *******/
 .article1 {
-  padding: 15.25rem 12.3rem 10.2rem 11.56rem;
-  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+  height: 150vh;
 }
 
-.article1 .title h2 {
-  font-size: 11.5625rem;
-  text-transform: capitalize;
-  margin-bottom: 3.2rem;
-}
-.article1 .title p {
-  font-family: Pretendard;
-  font-size: 1.5625rem;
-}
-.article1 .title .blank {
-  opacity: 0;
+.article1 h1 {
+  font-size: 12rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  color: #8f4141;
 }
 
-.article1 img {
-  width: 30.10525rem;
+.article1 h1:nth-child(2) {
+  font-size: 10rem;
+  margin: 0;
+}
+
+.article1 .box {
+  width: 53rem;
+  height: 25rem;
+  border: 1px solid #000;
+  position: absolute;
+  top: 25rem;
+  right: 3rem;
+  z-index: -1;
+}
+
+.article1 .box img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.article1 .tittle {
+  width: 38rem;
+  position: absolute;
+  top: 40rem;
+  left: 10rem;
+}
+
+.article1 p {
+  font-size: 1.1rem;
+  line-height: 150%;
 }
 
 /****** article2 *******/
@@ -81,7 +107,18 @@ header .header_menu p {
   font-weight: bold;
   line-height: 180%;
   text-transform: capitalize;
+  position: relative;
+}
+
+.article2 .flex .article2-title p .fonts::before {
+  content: "";
+  position: absolute;
   border-bottom: #d2eaf8 solid 1rem;
+  left: 0;
+  bottom: 0rem;
+  height: 3px;
+  width: 100%;
+  z-index: -1;
 }
 
 .article2 img {
@@ -109,6 +146,18 @@ header .header_menu p {
 .article3 .article3-title {
   font-size: 3.125rem;
   font-weight: bold;
+  position: relative;
+}
+
+.article3 .article3-title::before {
+  content: "";
+  position: absolute;
+  border-bottom: #d2eaf8 double 13px;
+  left: -10px;
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  z-index: -1;
 }
 
 .article3 img {
@@ -136,6 +185,18 @@ header .header_menu p {
   font-weight: bold;
   text-transform: capitalize;
   margin: 2.8rem 0 2.2rem 6.75rem;
+  position: relative;
+}
+
+.article4 p::before {
+  content: "";
+  position: absolute;
+  border-bottom: #d2eaf8 solid 13px;
+  left: -10px;
+  bottom: 10px;
+  height: 3px;
+  width: 28%;
+  z-index: -1;
 }
 
 .article4 ul {
@@ -211,7 +272,7 @@ header .header_menu p {
 .article5 .flex .STRENGHS,
 .article5 .flex .OPPORTUNITIES {
   width: 25rem;
-  background: rgba(24, 74, 95, 0.5);
+  background: rgba(24, 74, 95);
   margin: 3.31rem 1.5rem 1.5rem 14.56rem;
   border-radius: 1.25rem;
   padding: 4.37rem;
@@ -221,19 +282,12 @@ header .header_menu p {
 .article5 .flex .WEEKNESS,
 .article5 .flex .THREATS {
   width: 25rem;
-  background: rgba(24, 74, 95, 0.5);
+  background: rgba(24, 74, 95);
   margin: 3.31rem 1.5rem 1.5rem 0;
   border-radius: 1.25rem;
   padding: 4.37rem;
   position: relative;
   transition: 0.3s;
-}
-
-.article5 .flex .STRENGHS:hover,
-.article5 .flex .OPPORTUNITIES:hover,
-.article5 .flex .WEEKNESS:hover,
-.article5 .flex .THREATS:hover {
-  background: rgba(24, 74, 95, 1);
 }
 
 .article5 .flex ul {
@@ -280,10 +334,9 @@ header .header_menu p {
 
 /****** article6 *******/
 .article6 {
-  /* height: 42.625rem; */
   text-align: center;
   padding: 11rem;
-  background: url(./img/article6.jpg) no-repeat 50% / cover;
+  background: url(./img/article6.jpg) no-repeat 50% 20% / cover;
 }
 
 .article6 h3 {
@@ -295,14 +348,17 @@ header .header_menu p {
 
 .article6 h5 {
   font-family: Pretendard;
-  font-size: 2.5rem;
-  font-weight: normal;
+  font-size: 2.7rem;
+  font-weight: bold;
   margin-bottom: 2rem;
+  padding-bottom: 15px;
+  border-bottom: var(--main-color) 2px solid;
 }
 
 .article6 p {
   font-family: Pretendard;
-  font-size: 1.5625rem;
+  font-size: 1rem;
+  line-height: 150%;
 }
 
 /****** article7 *******/
@@ -343,4 +399,80 @@ header .header_menu p {
 }
 .article7 .flex img {
   width: 40.97688rem;
+}
+
+/*------------------ footer ------------------*/
+footer {
+  padding: 1rem;
+  color: #000;
+}
+
+footer h3 {
+  font-size: 14rem;
+  text-transform: uppercase;
+  color: #8f4141;
+}
+
+footer .pp {
+  font-size: 11.875rem;
+  margin-top: -2.5rem;
+}
+
+footer .contact {
+  font-size: 4rem;
+  margin: 6rem 0 0 10.87rem;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #8f4141;
+  transition: all 0.3s ease;
+}
+
+footer .mail span::after {
+  content: "";
+  width: 0%;
+  left: 10.87rem;
+  height: 1px;
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  border-bottom: 2px solid #8f4141;
+  transition: all 0.4s ease;
+}
+
+footer .mail:hover span::after {
+  content: "";
+  width: 30%;
+  left: 10.87rem;
+  height: 1px;
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  border-bottom: 2px solid #8f4141;
+  transition: all 0.4s ease;
+}
+
+footer .contact:hover + .mail span::after {
+  content: "";
+  width: 30%;
+  left: 10.87rem;
+  height: 1px;
+  display: block;
+  position: absolute;
+  margin-top: 3px;
+  border-bottom: 2px solid #8f4141;
+  transition: all 0.4s ease;
+}
+
+footer .mail {
+  font-size: 3.125rem;
+  margin: 0 0 5.12rem 10.87rem;
+  padding: 10px;
+  color: #8f4141;
+  line-height: 1.5;
+}
+
+footer .mono {
+  width: 98.125rem;
+  margin: 0 154px;
+  text-align: center;
 }
