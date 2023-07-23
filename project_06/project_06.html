@@ -41,11 +41,11 @@
   <link rel="stylesheet" href="./project_06.css">
 
   <!-- style js -->
-  <link rel="stylesheet" href="./project_06.js">
+  <script defer src="./project_06.js"></script>
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <div class="header-box flex">
       <p class="text">free shipping sitewide 🛒 (Continental .ko) Salmon sausage bread🌭</p>
       <p class="text">free shipping sitewide 🛒 (Continental .ko) Salmon sausage bread🌭</p>
@@ -59,7 +59,7 @@
         <p>where to find</p>
       </div>
       <div class="title">
-        <p class="kids">happy pang pang</p>
+        <p><a href="#top" class="kids">happy pang pang</a></p>
       </div>
       <div class="icon flex">
         <div class="logIn">
@@ -134,13 +134,18 @@
       <p class="text">/ no grape / no nut / no pomegranate / no citrus fruits / no seasoning</p>
       <p class="text">/ no grape / no nut / no pomegranate / no citrus fruits / no seasoning</p>
     </div>
-    <div class="duck"></div>
-    <div class="article2_title">
-      <h1 class="glikerS">Duck Breast</h1>
-      <p class="text"></p>
-      <div class="click flex">
-        <p>ADD TO CART</p>
-        <p>￦8,500</p>
+    <div class="article2_img flex">
+      <div class="duck"></div>
+      <div class="article2_title">
+        <h1 class="glikerS">chicken-rib gum</h1>
+        <p class="text">The juices are alive, so the more you chew, the more flavor you get.
+          It's full of sweet taste, nutrients, and even the joy of chewing
+          the finest gum in the country
+        </p>
+        <div class="click flex">
+          <p>ADD TO CART</p>
+          <p>￦8,500</p>
+        </div>
       </div>
     </div>
   </article>
@@ -148,63 +153,65 @@
   <article class="article3">
     <div class="article3_title flex">
       <h1 class="glikerS">sweet potato</h1>
-      <p>()</p>
+      <p>(20)</p>
       <h1 class="glikerS">jerky</h1>
-      <p>()</p>
+      <p>(20)</p>
     </div>
-    <div class="article3_img flex">
-      <div class="object1">
-        <p>chicken-rib gum</p>
-        <img src="" alt="chicken-rib">
-        <div class="add flex">
-          <p>add to cart</p>
-          <p>(10 ps)</p>
-          <p>￦9,500</p>
+    <div class="article3_sticky">
+      <div class="article3_img flex">
+        <div class="object1 object">
+          <h5>Duck Breast</h5>
+          <div class="object1-bg"></div>
+          <div class="add flex">
+            <p>add to cart</p>
+            <p>(100g)</p>
+            <p>￦9,500</p>
+          </div>
         </div>
-      </div>
-      <div class="object2">
-        <p>Chicken-breast jerky</p>
-        <img src="" alt="Chicken-breast jerky">
-        <div class="add flex">
-          <p>add to cart</p>
-          <p>(100g/200g)</p>
-          <p>￦6,500</p>
+        <div class="object2 object">
+          <h5>Chicken-breast jerky</h5>
+          <div class="object2-bg"></div>
+          <div class="add flex">
+            <p>add to cart</p>
+            <p>(100g/200g)</p>
+            <p>￦6,500</p>
+          </div>
         </div>
-      </div>
-      <div class="object3">
-        <p>Jeju Horse Meat jerky</p>
-        <img src="" alt="Horse-Meat">
-        <div class="add flex">
-          <p>add to cart</p>
-          <p>(50g)</p>
-          <p>￦6,500</p>
+        <div class="object3 object">
+          <h5>Jeju Horse Meat jerky</h5>
+          <div class="object3-bg"></div>
+          <div class="add flex">
+            <p>add to cart</p>
+            <p>(50g)</p>
+            <p>￦6,500</p>
+          </div>
         </div>
-      </div>
-      <div class="object4">
-        <p>sweet potato duck roll</p>
-        <img src="" alt="duck-roll">
-        <div class="add flex">
-          <p>add to cart</p>
-          <p>(100g)</p>
-          <p>￦5,500</p>
+        <div class="object4 object">
+          <h5>sweet potato duck roll</h5>
+          <div class="object4-bg"></div>
+          <div class="add flex">
+            <p>add to cart</p>
+            <p>(100g)</p>
+            <p>￦5,500</p>
+          </div>
         </div>
-      </div>
-      <div class="object5">
-        <p>duck lotus root chips</p>
-        <img src="" alt="duck-chips">
-        <div class="add flex">
-          <p>add to cart</p>
-          <p>(50g)</p>
-          <p>￦8,000</p>
+        <div class="object5 object">
+          <h5>duck lotus root chips</h5>
+          <div class="object5-bg"></div>
+          <div class="add flex">
+            <p>add to cart</p>
+            <p>(50g)</p>
+            <p>￦8,000</p>
+          </div>
         </div>
-      </div>
-      <div class="object6">
-        <p>three colors chicken Terrine</p>
-        <img src="" alt="chicken-Terrine">
-        <div class="add flex">
-          <p>add to cart</p>
-          <p>(3 ps)</p>
-          <p>￦4,900</p>
+        <div class="object6 object">
+          <h5>three colors chicken Terrine</h5>
+          <div class="object6-bg"></div>
+          <div class="add flex">
+            <p>add to cart</p>
+            <p>(3 ps)</p>
+            <p>￦4,900</p>
+          </div>
         </div>
       </div>
     </div>
@@ -219,33 +226,38 @@
       <h3>citrus fruits</h3>
       <h3>seasoning</h3>
     </div>
-    <p></p>
+    <p>We build my own good sweet potatoes that my pet eats. <br>
+      We planted it as a high quality seedling with strong seedlings and many stems.<br>
+      It's a large field of about 700 pyeong.</p>
   </article>
 
   <article class="article5">
     <h1 class="glikerS">they like us</h1>
-    <div class="grid">
+    <div class="review grid">
       <div id="review1">
-        <p></p>
-        <p class="amoitar"></p>
+        <p>Our old dog always eats deliciously. <br>
+          You eat it better because I steamed it.</p><br>
+        <p class="bold">- LUV_dog</p>
       </div>
-      <img src="" alt="review1" class="review1">
-      <img src="" alt="review2" class="review2">
+      <div class="review1"></div>
+      <div class="review2"></div>
       <div id="review2">
-        <p></p>
-        <p class="bold"></p>
+        <p>He runs to me even if I hold it My baby!!!</p><br>
+        <p class="bold">- My Love</p>
       </div>
       <div id="review3">
-        <p></p>
-        <p class="bold"></p>
+        <p>If you microwave it for 30 seconds and mix it with lactobacillus, it's a meal!! I eat so well that I keep
+          buying it.
+        </p><br>
+        <p class="bold">- I Will</p>
       </div>
-      <img src="" alt="review3" class="review3">
-      <img src="" alt="review4" class="review4">
+      <div class="review3"></div>
+      <div class="review4"></div>
     </div>
   </article>
 
   <footer>
-    <div class="footer-title flex">
+    <div class="footer-title flex glikerS">
       <h2>tiktok</h2>
       <h2>twitter</h2>
       <h2>instagram</h2>
@@ -253,17 +265,18 @@
       <h2>spotify</h2>
     </div>
     <div class="footer-blog flex">
-      <div class="flex">
+      <div class="home">
         <p>home</p>
         <p>mixology</p>
         <p>wholesale</p>
         <p>say hey</p>
       </div>
-      <div class="footer-logo flex">
-        <p class="kids">happy pang pang</p>
+      <div class="footer-logo">
+        <p><a href="#top" class="kids logo">happy pang pang</a></p>
         <p>Sign up for our newsletter and get 15% off!</p>
-        <div class="input">
-          <input type="search">
+        <div class="input flex">
+          <input type="text" placeholder="You Can Search">
+          <button type="submit">화살표</button>
         </div>
         <div class="policy flex">
           <p>privacy policy</p>
@@ -273,14 +286,14 @@
           <p>accessiblity</p>
         </div>
       </div>
-      <div class="flex">
+      <div class="blog">
         <p>blog</p>
         <p>herb club</p>
         <p>vacation</p>
         <p>rewards</p>
       </div>
     </div>
-    <p>© AURA BORA 2023</p>
+    <p class="©">© happy pang pang 2023</p>
   </footer>
 </body>
 

@@ -1,24 +1,25 @@
 @charset "utf-8";
 
-/* h1 {
-  font-family: "Gliker-Semi", sans-serif;
-  color: #fff;
-  text-shadow: 1.4715657234191895px 2.207348585128784px #000;
-  -webkit-text-stroke: 1px #000;
-} */
+html {
+  scroll-behavior: smooth;
+}
 
 h1 {
   margin: 0;
 }
+
 h2 {
   margin: 0;
 }
+
 h3 {
   margin: 0;
 }
+
 h4 {
   margin: 0;
 }
+
 h5 {
   margin: 0;
 }
@@ -35,9 +36,11 @@ body {
   margin: 0;
   font-family: "SpaceMono-Regular", sans-serif;
 }
+
 .flex {
   display: flex;
 }
+
 .grid {
   display: grid;
 }
@@ -78,13 +81,11 @@ header .header-box {
   width: 100%;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  background: linear-gradient(
-    270deg,
-    #fddfb1 0%,
-    #ecddd9 53.65%,
-    #e3ddde 76.04%,
-    #f1f5d3 100%
-  );
+  background: linear-gradient(270deg,
+      #fddfb1 0%,
+      #ecddd9 53.65%,
+      #e3ddde 76.04%,
+      #f1f5d3 100%);
   height: 1.75rem;
   line-height: 1.75rem;
   white-space: nowrap;
@@ -117,10 +118,12 @@ header .header-txt .header-shop {
   width: 24.0625rem;
   font-size: 1.23894rem;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 header .header-txt .title {
   font-size: 2.46081rem;
+  cursor: pointer;
 }
 
 header .header-txt .icon {
@@ -137,18 +140,37 @@ header .header-txt .icon .logIn {
   border-radius: 1.125rem;
   background: #fff;
   box-shadow: 2px 2px 0px 0px #000;
+  transition: .2s;
+  cursor: pointer;
+}
+
+header .header-txt .icon .logIn:hover {
+  background: lightcoral;
 }
 
 header .header-txt .icon .logIn p {
   font-size: 1.23894rem;
 }
 
+header .header-txt .icon svg {
+  cursor: pointer;
+  transition: .2s;
+}
+
+header .header-txt .icon svg:hover {
+  opacity: .3;
+}
+
 /******* main *******/
 main {
+  width: 100%;
   height: 62rem;
   /* background: url() no-repeat 50% / cover; */
-  background-color: #e3ddde;
+  background-color: #fff;
   position: relative;
+
+  animation: background 10s linear infinite alternate;
+  animation-direction: normal;
 }
 
 main .glikerS {
@@ -161,6 +183,7 @@ main .glikerS {
   text-transform: uppercase;
   font-size: 1.9145rem;
 }
+
 main h1 {
   color: white;
   text-shadow: 1.4715657234191895px 2.207348585128784px #000;
@@ -170,15 +193,19 @@ main h1 {
   position: absolute;
   left: 6.06rem;
 }
+
 main .pet {
   top: 17rem;
 }
+
 main .snack {
   top: 26.06rem;
 }
+
 main .restaurant {
   top: 35.13rem;
 }
+
 main .main_img_box {
   border: 2px solid #000;
   border-radius: 11.96875rem 11.96875rem 0.9375rem 0.9375rem;
@@ -189,6 +216,8 @@ main .main_img_box {
   right: 6rem;
   overflow: hidden;
   box-shadow: 8px 9px 0px -1px #000;
+  animation: main-img 10s linear infinite alternate;
+  animation-direction: normal;
 }
 
 main .main_img_box .img_box {
@@ -201,15 +230,49 @@ main .main_img_box .img_icon {
   height: 5.75rem;
   overflow: hidden;
 }
+
 main .main_img_box .img_icon .img_icon1,
 main .main_img_box .img_icon .img_icon2 {
   width: 8.2rem;
   height: 5.75rem;
   border-right: 2px solid #000;
+  background-color: #fff;
 }
+
+main .main_img_box .img_icon .img_icon1:hover,
+main .main_img_box .img_icon .img_icon2:hover,
+main .main_img_box .img_icon .img_icon3:hover {
+  filter: grayscale(0);
+}
+
+main .main_img_box .img_icon .img_icon1 {
+  width: 8.2rem;
+  height: 5.75rem;
+  background: #fff url(./img/beef.png) no-repeat 50% / 55%;
+  filter: grayscale(1);
+  transition: .1s;
+  animation: main-icon1 10s linear infinite alternate;
+  animation-direction: normal;
+}
+
+main .main_img_box .img_icon .img_icon2 {
+  width: 8.2rem;
+  height: 5.75rem;
+  background: #fff url(./img/sweet-potato.png) no-repeat 50% / 60%;
+  filter: grayscale(1);
+  transition: .1s;
+  animation: main-icon2 10s linear infinite alternate;
+  animation-direction: normal;
+}
+
 main .main_img_box .img_icon .img_icon3 {
   width: 8.2rem;
   height: 5.75rem;
+  background: #fff url(./img/pork.png) no-repeat 50% / 55%;
+  filter: grayscale(1);
+  transition: .1s;
+  animation: main-icon3 10s linear infinite alternate;
+  animation-direction: normal;
 }
 
 main .main_img_box .img_now {
@@ -217,6 +280,7 @@ main .main_img_box .img_now {
   text-align: center;
   font-size: 1.16556rem;
   text-transform: uppercase;
+  background-color: #fff;
 }
 
 main .button {
@@ -229,18 +293,131 @@ main .button {
   bottom: -1.94rem;
   left: 35.65rem;
   justify-content: space-between;
-  background-color: red;
+  background-color: #fff;
+  cursor: pointer;
 }
+
 main .button p {
   padding: 0 2rem;
 }
+
 main .button p:nth-child(1) {
   height: 56px;
   line-height: 58px;
   text-align: center;
   border: 1px solid #000;
   border-radius: 1.8125rem;
-  background-color: aqua;
+  background-color: lightcoral;
+}
+
+@keyframes background {
+
+  0%,
+  30% {
+    background: lightcoral no-repeat 50% / cover;
+  }
+
+  35%,
+  65% {
+    background: lightblue no-repeat 50% / cover;
+  }
+
+  70%,
+  95% {
+    background: greenyellow no-repeat 50% / cover;
+  }
+
+  100% {
+    background: lightcoral no-repeat 50% / cover;
+  }
+}
+
+@keyframes main-img {
+
+  0%,
+  30% {
+    background: url(./img/Horse-Meat.jpg) no-repeat 50% / cover;
+  }
+
+  35%,
+  65% {
+    background: url(./img/duck-roll.jpg) no-repeat 50% / cover;
+  }
+
+  70%,
+  95% {
+    background: url(./img/pork-ear.jpg) no-repeat 50%/ cover;
+  }
+
+  100% {
+    background: url(./img/Horse-Meat.jpg) no-repeat 50%/ cover;
+  }
+}
+
+@keyframes main-icon1 {
+
+  0%,
+  30% {
+    filter: grayscale(0);
+  }
+
+  35%,
+  65% {
+    filter: grayscale(1);
+  }
+
+  70%,
+  95% {
+    filter: grayscale(1);
+  }
+
+  100% {
+    filter: grayscale(0);
+  }
+}
+
+@keyframes main-icon2 {
+
+  0%,
+  30% {
+    filter: grayscale(1);
+  }
+
+  35%,
+  65% {
+    filter: grayscale(0);
+  }
+
+  70%,
+  95% {
+    filter: grayscale(1);
+  }
+
+  100% {
+    filter: grayscale(1);
+  }
+}
+
+@keyframes main-icon3 {
+
+  0%,
+  30% {
+    filter: grayscale(1);
+  }
+
+  35%,
+  65% {
+    filter: grayscale(1);
+  }
+
+  70%,
+  95% {
+    filter: grayscale(0);
+  }
+
+  100% {
+    filter: grayscale(1);
+  }
 }
 
 /******* article1 *******/
@@ -250,11 +427,13 @@ main .button p:nth-child(1) {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.3fr repeat(4, 1fr) 0.3fr 0.3fr;
 }
+
 .article1 .happy {
   grid-column: 1 / 2;
   grid-row: 1/2;
   font-size: 1.4355rem;
 }
+
 .article1 .make {
   grid-column: 1 / 3;
   grid-row: 2/3;
@@ -264,10 +443,12 @@ main .button p:nth-child(1) {
   -webkit-text-stroke: 1px #000;
   text-transform: uppercase;
 }
+
 .article1 .article1-img1 {
   grid-column: 1 / 2;
   grid-row: 3/4;
 }
+
 .article1 .hand {
   grid-column: 2/3;
   grid-row: 3/4;
@@ -277,6 +458,7 @@ main .button p:nth-child(1) {
   -webkit-text-stroke: 1px #000;
   text-transform: uppercase;
 }
+
 .article1 .pet {
   grid-column: 1 / 2;
   grid-row: 4/5;
@@ -286,10 +468,12 @@ main .button p:nth-child(1) {
   -webkit-text-stroke: 1px #000;
   text-transform: uppercase;
 }
+
 .article1 .article1-img2 {
   grid-column: 2/3;
   grid-row: 4/5;
 }
+
 .article1 .cake {
   grid-column: 1 / 3;
   grid-row: 5/6;
@@ -299,12 +483,15 @@ main .button p:nth-child(1) {
   -webkit-text-stroke: 1px #000;
   text-transform: uppercase;
   margin: 0 auto;
+  letter-spacing: 2.8px;
 }
+
 .article1 .such {
   grid-column: 1 / 3;
   grid-row: 6/7;
   font-size: 1.43756rem;
 }
+
 .article1 .to {
   grid-column: 1 / 3;
   grid-row: 7/8;
@@ -315,20 +502,17 @@ main .button p:nth-child(1) {
 .article2 {
   height: 40.5rem;
   background-color: lightblue;
-  position: relative;
 }
 
 .article2 .ani_top {
   width: 100%;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  background: linear-gradient(
-    270deg,
-    #fddfb1 0%,
-    #ecddd9 53.65%,
-    #e3ddde 76.04%,
-    #f1f5d3 100%
-  );
+  background: linear-gradient(270deg,
+      #fddfb1 0%,
+      #ecddd9 53.65%,
+      #e3ddde 76.04%,
+      #f1f5d3 100%);
   height: 2.875rem;
   line-height: 2.875rem;
   white-space: nowrap;
@@ -341,42 +525,380 @@ main .button p:nth-child(1) {
   margin-right: 30px;
 }
 
-.article2 .duck {
+.article2 .article2_img {
+  justify-content: space-between;
+  padding: 4.94rem 15rem 7.81rem 15rem;
+}
+
+.article2 .article2_img .duck {
   width: 40.25rem;
   height: 24.875rem;
   border-radius: 0.625rem;
   border: 1px solid #000;
-  background: #d9d9d9;
-  margin: 7rem 2rem 7rem 19rem;
+  background: url(./img/chicken-rib-gum.gif) no-repeat 50% 60%/ cover;
 }
 
-.article2 .article2_title {
-  position: absolute;
-  top: 10.31rem;
-  right: 18.31rem;
+.article2 .article2_img .article2_title {
+  margin: 0 auto;
 }
 
-.article2 .article2_title h1 {
+.article2 .article2_img .article2_title h1 {
   color: #fff;
   text-shadow: 1.1344050168991089px 1.7016077041625977px #000;
-  font-size: 5.94769rem;
+  -webkit-text-stroke: 1px #000;
+  font-size: 5.5rem;
   letter-spacing: 0.44606rem;
   text-transform: uppercase;
 }
 
 .article2 .article2_title .text {
+  font-size: 1.15763rem;
+  width: 34rem;
+  margin: 0 auto;
   text-align: center;
-  margin: 0.2rem 0 0.8rem 0;
 }
 
 .article2 .article2_title .click {
   width: 18.8125rem;
   height: 3.625rem;
-  background: #d9d9d9;
-  border-radius: 0.5rem;
   border: 1px solid #000;
-  background: #d9d9d9;
-  margin: 0 auto;
+  border-radius: 0.5rem;
+  background: #fff;
+  margin: .8rem auto 0;
   justify-content: space-between;
   padding: 1rem 1.65rem;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.article2 .article2_title .click:hover {
+  background-color: lightcoral;
+}
+
+/******* article3 *******/
+.article3 {
+  padding: 1.1rem 0 3.38rem 1.7rem;
+  overflow: hidden;
+
+  width: 100%;
+  position: relative;
+}
+
+.article3 .article3_sticky {
+  position: sticky;
+  top: 0;
+}
+
+.article3 .article3_title {
+  justify-content: flex-start;
+}
+
+.article3 .article3_title h1 {
+  font-size: 7.71544rem;
+  text-transform: uppercase;
+  color: #FFF;
+  text-shadow: 1.4715657234191895px 2.207348585128784px #000;
+  -webkit-text-stroke: 1px #000;
+  margin: 0 0 1.71rem 0;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.article3 .article3_title h1:nth-child(1) {
+  color: lightcoral;
+}
+
+.article3 .article3_title h1:hover {
+  color: lightcoral;
+}
+
+.article3 .article3_title p {
+  margin: 2rem 4.94rem 0 .4rem;
+}
+
+.article3 .article3_img {
+  overflow: hidden;
+  width: 132.375rem;
+
+  position: absolute;
+}
+
+.article3 .article3_img .object {
+  width: 20.5rem;
+  display: grid;
+  grid-template-rows: 3.625rem 28.31rem 3.625rem;
+  text-align: center;
+  margin-right: 1.87rem;
+  border-radius: 0.4375rem;
+  border: 1px solid #000;
+  background: rgba(217, 217, 217, 0.50);
+  overflow: hidden;
+}
+
+.article3 .article3_img .object1 .object1-bg {
+  background: url(./img/DUCK-BREAST.jpg) no-repeat 50% / cover;
+}
+
+.article3 .article3_img .object2 .object2-bg {
+  background: url(./img/Chicken-breast-jerky.jpg) no-repeat 50% / cover;
+}
+
+.article3 .article3_img .object3 .object3-bg {
+  background: url(./img/Horse-Meat.jpg) no-repeat 50% / cover;
+}
+
+.article3 .article3_img .object4 .object4-bg {
+  background: url(./img/duck-roll.jpg) no-repeat 50% / cover;
+}
+
+.article3 .article3_img .object5 .object5-bg {
+  background: url(./img/duck-chips.jpg) no-repeat 50% / cover;
+}
+
+.article3 .article3_img .object6 .object6-bg {
+  background: url(./img/chicken-Terrine.jpg) no-repeat 50% / cover;
+}
+
+.article3 .article3_img .object h5 {
+  padding: 0.9rem;
+  text-transform: uppercase;
+  background-color: burlywood;
+  border-bottom: 1px solid #000;
+}
+
+.article3 .article3_img .object .add {
+  padding: .9rem;
+  text-transform: uppercase;
+  background-color: beige;
+  border-top: 1px solid #000;
+  justify-content: space-between;
+}
+
+/******* article4 *******/
+.article4 {
+  width: 100%;
+  background: #f5d4a2;
+
+}
+
+.article4 h1 {
+  font-size: 23.18281rem;
+  text-shadow: 4.4216718673706055px 6.632508754730225px #000;
+  color: #FFF;
+  -webkit-text-stroke: 1px #000;
+  text-align: center;
+  padding: -1rem;
+}
+
+.article4 .line {
+  font-size: 2.21238rem;
+  color: #FFF;
+  -webkit-text-stroke: 1px #000;
+  text-transform: uppercase;
+  margin: 0 5.5rem 3rem 5.5rem;
+  justify-content: space-between;
+}
+
+.article4 P {
+  font-size: 1.15763rem;
+  text-align: center;
+  /* width: 27.6875rem; */
+  margin: 0 auto;
+  padding-bottom: 6.56rem;
+}
+
+/******* article5 *******/
+.article5 {
+  padding: 0.63rem 1.7rem 3.75rem;
+}
+
+.article5 h1 {
+  font-size: 7.71544rem;
+  color: lightcoral;
+  text-shadow: 1.4715657234191895px 2.207348585128784px #000;
+  -webkit-text-stroke: 1px #000;
+  text-transform: uppercase;
+}
+
+.article5 .review {
+  grid-template-columns: 32.8125rem 32.8125rem 14.75rem 31rem;
+  grid-template-rows: 8.8125rem 26.75rem 8.625rem;
+  gap: 1.75rem;
+}
+
+.article5 .review .bold {
+  font-weight: bold;
+}
+
+.article5 .review #review1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  border-radius: 0.9375rem;
+  border: 1px solid #000;
+  padding: 1.62rem .8rem 1.44rem;
+}
+
+.article5 .review .review1 {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  border-radius: 0.9375rem;
+  border: 1px solid #000;
+  background: url(./img/review1.jpg) no-repeat 70% 50%/ cover;
+  filter: contrast(70%);
+  transition: .2s;
+}
+
+.article5 .review .review2 {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  border-radius: 0.9375rem;
+  border: 1px solid #000;
+  background: url(./img/review2.jpg) no-repeat 65% 50%/ cover;
+  filter: contrast(70%);
+  transition: .2s;
+}
+
+.article5 .review #review2 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  border-radius: 0.9375rem;
+  border: 1px solid #000;
+  padding: 1.62rem .8rem 1.44rem;
+}
+
+.article5 .review #review3 {
+  grid-column: 3/5;
+  grid-row: 1/2;
+  border-radius: 0.9375rem;
+  border: 1px solid #000;
+  padding: 1.62rem .8rem 1.44rem;
+}
+
+.article5 .review .review3 {
+  grid-column: 3/4;
+  grid-row: 2/4;
+  border-radius: 0.9375rem;
+  border: 1px solid #000;
+  background: url(./img/review3.jpg) no-repeat 80% 50%/ cover;
+  filter: contrast(70%);
+  transition: .2s;
+}
+
+.article5 .review .review4 {
+  grid-column: 4/5;
+  grid-row: 2/4;
+  border-radius: 0.9375rem;
+  border: 1px solid #000;
+  background: url(./img/review4.jpg) no-repeat 45% 50%/ cover;
+  filter: contrast(70%);
+  transition: .2s;
+}
+
+.article5 .review .review1:hover,
+.article5 .review .review2:hover,
+.article5 .review .review3:hover,
+.article5 .review .review4:hover {
+  filter: contrast(100%);
+}
+
+/******* footer *******/
+footer {
+  position: relative;
+}
+
+footer .footer-title {
+  height: 7.6875rem;
+  background: linear-gradient(270deg,
+      #fddfb1 0%,
+      #ecddd9 53.65%,
+      #e3ddde 76.04%,
+      #f1f5d3 100%);
+  padding: 1.07rem 4.3rem;
+  justify-content: space-between;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+footer .footer-title h2 {
+  font-size: 4.40613rem;
+  color: #FFF;
+  text-shadow: 0.8403881192207336px 1.2605822086334229px #000;
+  -webkit-text-stroke: 1px #000;
+  text-transform: uppercase;
+}
+
+footer .footer-blog {
+  background: #d5d5d5;
+  padding: 3.56rem 31.3rem 1.13rem;
+  justify-content: space-between;
+  text-align: center;
+}
+
+footer .footer-blog .home {
+  font-size: 1.15763rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+footer .footer-blog .footer-logo .logo {
+  font-size: 2.46081rem;
+  text-transform: uppercase;
+}
+
+footer .footer-blog .footer-logo p {
+  font-size: 0.9;
+  margin: 2rem 0 1.2rem;
+}
+
+footer .footer-blog .footer-logo .input {
+  margin-bottom: 2.44rem;
+  justify-content: center
+}
+
+footer .footer-blog .footer-logo .input input {
+  width: 24.5rem;
+  height: 3.625rem;
+  border-radius: 0.375rem 0 0 0.375rem;
+  border: 1px solid #000;
+  padding: 1.37rem 0.7rem;
+  border-right: none;
+  background: rgba(217, 217, 217, 0.50);
+  font-size: 1.2rem;
+}
+
+footer .footer-blog .footer-logo .input button {
+  width: 4rem;
+  height: 3.625rem;
+  border-radius: 0 0.375rem 0.375rem 0;
+  border: 1px solid #000;
+  padding: 1.37rem 0.7rem;
+  border-left: none;
+  text-indent: -9999px;
+  background: rgba(217, 217, 217, 0.50) url(./img/footer-arrow.png) no-repeat 50% / 70%;
+  cursor: pointer;
+}
+
+footer .footer-blog .footer-logo .policy {
+  width: 33.875rem;
+  justify-content: space-between;
+}
+
+footer .footer-blog .footer-logo .policy p {
+  font-size: 0.87356rem;
+  text-transform: uppercase;
+}
+
+footer .footer-blog .blog {
+  font-size: 1.15763rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+footer .© {
+  font-size: 0.87775rem;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 1.12rem;
+  left: 1.62rem;
 }
