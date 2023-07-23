@@ -147,7 +147,7 @@ header h1 {
 .article2 .project .design1 {
   background-color: white;
   padding: 1.08rem 0.81rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   width: calc(52.1875rem - 1.62rem);
   height: calc(74.363rem - 1.16rem);
   transition: 0.3s;
@@ -231,7 +231,7 @@ header h1 {
 .article2 .project .design2 {
   background-color: white;
   padding: 1.08rem 0.81rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   width: calc(52.1875rem - 1.62rem);
   height: calc(74.363rem - 1.16rem);
   transition: 0.3s;
@@ -314,7 +314,7 @@ header h1 {
   width: calc(52.1875rem - 1.62rem);
   height: calc(74.363rem - 1.16rem);
   position: relative;
-  margin-top: 2.95rem;
+  margin: 2.5rem 0;
 }
 
 .article2 .project .design3 .article2_project_menu {
@@ -382,7 +382,7 @@ header h1 {
   height: calc(74.363rem - 1.16rem);
   transition: 0.3s;
   position: relative;
-  margin: 2.95rem 0 0 2rem;
+  margin: 2.5rem 0 2.5rem 2.5rem;
 }
 
 .article2 .project .design4:hover {
@@ -421,7 +421,6 @@ header h1 {
   position: absolute;
   top: 5rem;
   left: 2.2rem;
-  /* box-shadow: 3px 0px 12px 0px rgba(0, 0, 0, 0.25); */
 }
 
 .article2 .project .design4 h4 {
@@ -460,7 +459,7 @@ header h1 {
   height: calc(78.363rem - 1.16rem);
   transition: 0.3s;
   position: relative;
-  margin: 4.95rem 0 0 60rem;
+  margin: 2.5rem 0;
 }
 
 .article2 .project .design5:hover {
@@ -530,6 +529,83 @@ header h1 {
   color: #505050;
 }
 
+/*------------------ article2 .design6 ------------------*/
+.article2 .project .design6 {
+  background-color: white;
+  padding: 1.08rem 0.81rem;
+  width: calc(52.1875rem - 1.62rem);
+  height: calc(78.363rem - 1.16rem);
+  transition: 0.3s;
+  position: relative;
+  margin: 2.5rem 0 2.5rem 9rem;
+}
+
+.article2 .project .design6:hover {
+  scale: 1.02;
+}
+
+.article2 .project .design6 .article2_project_menu {
+  font-size: 0.9375rem;
+  border: 1px solid #000;
+  justify-content: space-between;
+  margin-bottom: 1.92rem;
+}
+
+.article2 .project .design6 .article2_project_menu p {
+  border-right: 1px solid #000;
+  width: 12.67175rem;
+  height: 1.08375rem;
+  text-align: center;
+}
+
+.article2 .project .design6 .article2_project_menu p:last-child {
+  border: none;
+}
+
+.article2 .project .design6 .article2_project_menu .Responsive {
+  opacity: 40%;
+}
+
+.article2 .project .design6 .blank {
+  width: 49.93663rem;
+  height: 30.42881rem;
+  border: 1px solid #000;
+}
+
+.article2 .project .design6 .design6_img {
+  position: absolute;
+  top: 8.19rem;
+  left: 2.5rem;
+}
+
+.article2 .project .design6 h4 {
+  font-size: 5.5rem;
+  margin-top: 23.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.article2 .project .design6 .view {
+  font-size: 0.9375rem;
+  float: right;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 0rem;
+}
+
+.article2 .project .design6 .tittle {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  line-height: 1.6;
+}
+
+.article2 .project .design6 .tittle-mono {
+  font-family: Azeret Mono, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #505050;
+}
+
 /*------------------ article3 ------------------*/
 .article3 {
   padding: 0 1rem;
@@ -573,8 +649,7 @@ header h1 {
     background-color: white;
   }
 
-  100% {
-  }
+  100% {}
 }
 
 .article3 p .opacity {
@@ -703,6 +778,7 @@ header h1 {
 .article4 .article4_list .logo14 {
   top: 70%;
 }
+
 .article4 .article4_list .logo15 {
   top: 70%;
 }
@@ -711,7 +787,7 @@ header h1 {
   background-color: #ddd;
 }
 
-.article4 .article4_list .flex:hover + img {
+.article4 .article4_list .flex:hover+img {
   opacity: 1;
   transform: translateY(0);
 }
@@ -765,7 +841,7 @@ footer .mail:hover span::after {
   transition: all 0.4s ease;
 }
 
-footer .contact:hover + .mail span::after {
+footer .contact:hover+.mail span::after {
   content: "";
   width: 30%;
   left: 10.87rem;

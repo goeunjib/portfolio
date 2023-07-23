@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- open graph -->
+  <meta property="og:title" content="Eunji Go">
+  <meta property="og:description" content="Eunji Go">
+  <meta property="og:image" content="https://goeunjib.github.io/portfolio/images/open-graph.png">
+  <meta property="og:url" content="https://goeunjib.github.io/portfolio/index.html">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>project_06DHL REDESIGN</title>
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+
+  <!-- fonts -->
+  <link rel="stylesheet" href="../common/style/font.css">
+
+  <!-- variable -->
+  <link rel="stylesheet" href="./projectCommon.css">
+  <link rel="stylesheet" href="../common/style/header.css">
+
+  <link rel="stylesheet" href="./project5.css">
+</head>
+
+<body>
+  <header>
+    <div class="header_menu flex mono">
+      <p>eunji go</p>
+      <p>the Department of Industrial Design</p>
+      <div class="header_mail">
+        <p>available now</p>
+        <p>goeunji0948@naver.com</p>
+      </div>
+      <p><a href="../index.html#home" class="button">home</a></p>
+      <p><a href="../index.html#work" class="button">work</a></p>
+      <p><a href="../index.html#about" class="button">about</a></p>
+      <p><a href="../index.html#contact" class="button">contact</a></p>
+    </div>
+  </header>
+  <article class="article1">
+    <h1>DHL REDESIGN</h1>
+    <h1 class="pp">web publishing</h1>
+    <div class="box">
+      <div class="blank"></div>
+      <img src="./img/project_06.png" alt="project_06">
+    </div>
+    <p class="ko tittle">DHL을 사용하는 전세계 사용자들은 홈페이지를 통해 예약을 진행하기에 많은 사람들이 사용하기 편하도록 리디자인하였습니다.<br> <br>
+      <span class="mono">Users around the world who use DHL make reservations through the homepage, so it has been
+        redesigned to make it easier
+        for many people to use.</span>
+    </p>
+  </article>
+
+  <article class="article2">
+    <div class="article2-tittle">
+      <h1 class="pp">explanation</h1>
+    </div>
+    <div class="target">
+      <h2>target</h2>
+      <p class="ko">DHL 홈페이지를 방문하는 방문자들은 DHL의 택배를 사용하기 위해 예약 서비스 페이지를 많이 사용합니다. <br>하지만 가장 먼저 접하는 내용은 DHL의 택배사에 대한 이야기로
+        구성되어 있어서 홈페이지 사용에 불편함이 있습니다.
+      </p>
+    </div>
+    <div class="guide">
+      <h2>style guide</h2>
+      <img src="./img/project_06_style.png" alt="style guide img">
+    </div>
+    <div class="skill">
+      <h2>used skill</h2>
+      <p class="ko">가장 많이 사용하는 택배 신청 서비스창을 position값으로 가장 상단에 위치해 있습니다. <br> <br>고객 서비스는 다양한 문제를 갖고 방문하는 사용자들을 위해 대표적으로
+        찾는 이유들을 따로 칸을 만들어 flex로 표현하였습니다. <br> <br>긴 내용들이 사용되어야 하는 부분은 따로 공지칸을 만들어 제목을 붙여두어 짧은 내용으로 이해 가능하도록 디자인하였습니다.
+      </p>
+    </div>
+    <div class="problem">
+      <h2>problem & solution</h2>
+      <p class="ko">
+        - Problem : 마우스의 변화가 없어 정적이며 사용가능한지 인지가 어렵습니다.<br>
+        <span class="opacity">-</span><span>Solution : hover를 사용해 디자인 변화를 주어 사용 가능한 부분을 인지하도록 도와줍니다.</span>
+        <br> <br>
+        - Problem : 사용성이 떨어지는 게시판의 경우 긴 글들이 요구되기 때문에 페이지에 부피를 차지합니다.<br>
+        <span class="opacity">-</span><span>Solution : 최대 길이 한줄로한 표현이 되도록 글을 정리해두고, 게시판의 사용을 원하는 사용자들은 따로 이동할 수 있도록
+          되어있습니다.</span>
+      </p>
+    </div>
+
+    <div class="shotcut">
+      <p class="ko">
+        <a href="../project_06/project_06.html" target="_blank">DHL 홈페이지 바로가기</a>
+      </p>
+    </div>
+  </article>
+
+  <footer id="contact">
+    <h3>let’s start</h3>
+    <h3 class="pp">a project</h3>
+    <p class="contact">contact me</p>
+    <p class="mail"><span>goeunji0948@naver.com</span></p>
+    <p class="mono">2020_Department of Industrial Design Club Vice President / 2021_ Startup of Goods Design
+      Funding_tumblbug / 2021_Industrial Design Department Student President /
+      2022_Amateur oil painting exhibition / 2022_26th Hyeopseong University Industrial Design Department Graduation
+      Exhibition</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.button').forEach(button => button.innerHTML = '<div><span>' + button.textContent.trim().split('').join('</span><span>') + '</span></div>');
+  </script>
+</body>
+
+</html>
