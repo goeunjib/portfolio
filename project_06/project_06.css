@@ -81,11 +81,13 @@ header .header-box {
   width: 100%;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  background: linear-gradient(270deg,
-      #fddfb1 0%,
-      #ecddd9 53.65%,
-      #e3ddde 76.04%,
-      #f1f5d3 100%);
+  background: linear-gradient(
+    270deg,
+    #fddfb1 0%,
+    #ecddd9 53.65%,
+    #e3ddde 76.04%,
+    #f1f5d3 100%
+  );
   height: 1.75rem;
   line-height: 1.75rem;
   white-space: nowrap;
@@ -140,7 +142,7 @@ header .header-txt .icon .logIn {
   border-radius: 1.125rem;
   background: #fff;
   box-shadow: 2px 2px 0px 0px #000;
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -154,11 +156,11 @@ header .header-txt .icon .logIn p {
 
 header .header-txt .icon svg {
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 header .header-txt .icon svg:hover {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 /******* main *******/
@@ -250,7 +252,7 @@ main .main_img_box .img_icon .img_icon1 {
   height: 5.75rem;
   background: #fff url(./img/beef.png) no-repeat 50% / 55%;
   filter: grayscale(1);
-  transition: .1s;
+  transition: 0.1s;
   animation: main-icon1 10s linear infinite alternate;
   animation-direction: normal;
 }
@@ -260,7 +262,7 @@ main .main_img_box .img_icon .img_icon2 {
   height: 5.75rem;
   background: #fff url(./img/sweet-potato.png) no-repeat 50% / 60%;
   filter: grayscale(1);
-  transition: .1s;
+  transition: 0.1s;
   animation: main-icon2 10s linear infinite alternate;
   animation-direction: normal;
 }
@@ -270,7 +272,7 @@ main .main_img_box .img_icon .img_icon3 {
   height: 5.75rem;
   background: #fff url(./img/pork.png) no-repeat 50% / 55%;
   filter: grayscale(1);
-  transition: .1s;
+  transition: 0.1s;
   animation: main-icon3 10s linear infinite alternate;
   animation-direction: normal;
 }
@@ -311,29 +313,27 @@ main .button p:nth-child(1) {
 }
 
 @keyframes background {
-
   0%,
   30% {
-    background: lightcoral no-repeat 50% / cover;
+    background: url(./img/main-bg1.png) no-repeat 50% / cover;
   }
 
   35%,
   65% {
-    background: lightblue no-repeat 50% / cover;
+    background: url(./img/main-bg2.png) no-repeat 50% / cover;
   }
 
   70%,
   95% {
-    background: greenyellow no-repeat 50% / cover;
+    background: url(./img/main-bg3.png) no-repeat 50% / cover;
   }
 
   100% {
-    background: lightcoral no-repeat 50% / cover;
+    background: url(./img/main-bg1.png) no-repeat 50% / cover;
   }
 }
 
 @keyframes main-img {
-
   0%,
   30% {
     background: url(./img/Horse-Meat.jpg) no-repeat 50% / cover;
@@ -346,16 +346,15 @@ main .button p:nth-child(1) {
 
   70%,
   95% {
-    background: url(./img/pork-ear.jpg) no-repeat 50%/ cover;
+    background: url(./img/pork-ear.jpg) no-repeat 50% / cover;
   }
 
   100% {
-    background: url(./img/Horse-Meat.jpg) no-repeat 50%/ cover;
+    background: url(./img/Horse-Meat.jpg) no-repeat 50% / cover;
   }
 }
 
 @keyframes main-icon1 {
-
   0%,
   30% {
     filter: grayscale(0);
@@ -377,7 +376,6 @@ main .button p:nth-child(1) {
 }
 
 @keyframes main-icon2 {
-
   0%,
   30% {
     filter: grayscale(1);
@@ -399,7 +397,6 @@ main .button p:nth-child(1) {
 }
 
 @keyframes main-icon3 {
-
   0%,
   30% {
     filter: grayscale(1);
@@ -424,18 +421,18 @@ main .button p:nth-child(1) {
 .article1 {
   height: 55.9375rem;
   padding: 8rem 20rem 3.7rem 20rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.3fr repeat(4, 1fr) 0.3fr 0.3fr;
 }
 
 .article1 .happy {
-  grid-column: 1 / 2;
+  grid-column: 1 / 5;
   grid-row: 1/2;
   font-size: 1.4355rem;
 }
 
 .article1 .make {
-  grid-column: 1 / 3;
+  grid-column: 1 / 5;
   grid-row: 2/3;
   font-size: 6.7rem;
   color: #fff;
@@ -447,12 +444,15 @@ main .button p:nth-child(1) {
 .article1 .article1-img1 {
   grid-column: 1 / 2;
   grid-row: 3/4;
+  background: url(./img/article1-2.png) no-repeat 50% / contain;
 }
 
 .article1 .hand {
-  grid-column: 2/3;
+  grid-column: 2/5;
   grid-row: 3/4;
-  font-size: 6.7rem;
+  font-size: 6rem;
+  margin-left: 8px;
+  margin-top: 30px;
   color: #fff;
   text-shadow: 1.527933120727539px 2.2918999195098877px #000;
   -webkit-text-stroke: 1px #000;
@@ -460,9 +460,10 @@ main .button p:nth-child(1) {
 }
 
 .article1 .pet {
-  grid-column: 1 / 2;
+  grid-column: 1 / 3;
   grid-row: 4/5;
   font-size: 6.7rem;
+  margin-top: 30px;
   color: #fff;
   text-shadow: 1.527933120727539px 2.2918999195098877px #000;
   -webkit-text-stroke: 1px #000;
@@ -470,14 +471,16 @@ main .button p:nth-child(1) {
 }
 
 .article1 .article1-img2 {
-  grid-column: 2/3;
+  grid-column: 3/5;
   grid-row: 4/5;
+  background: url(./img/article1-1.png) no-repeat 50% / contain;
 }
 
 .article1 .cake {
-  grid-column: 1 / 3;
+  grid-column: 1 / 5;
   grid-row: 5/6;
   font-size: 6.7rem;
+  margin-top: 30px;
   color: #fff;
   text-shadow: 1.527933120727539px 2.2918999195098877px #000;
   -webkit-text-stroke: 1px #000;
@@ -487,13 +490,13 @@ main .button p:nth-child(1) {
 }
 
 .article1 .such {
-  grid-column: 1 / 3;
+  grid-column: 1 / 5;
   grid-row: 6/7;
   font-size: 1.43756rem;
 }
 
 .article1 .to {
-  grid-column: 1 / 3;
+  grid-column: 1 / 5;
   grid-row: 7/8;
   font-size: 1.43756rem;
 }
@@ -501,18 +504,20 @@ main .button p:nth-child(1) {
 /******* article2 *******/
 .article2 {
   height: 40.5rem;
-  background-color: lightblue;
+  background-color: rgb(173, 216, 230);
 }
 
 .article2 .ani_top {
   width: 100%;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
-  background: linear-gradient(270deg,
-      #fddfb1 0%,
-      #ecddd9 53.65%,
-      #e3ddde 76.04%,
-      #f1f5d3 100%);
+  background: linear-gradient(
+    270deg,
+    #fddfb1 0%,
+    #ecddd9 53.65%,
+    #e3ddde 76.04%,
+    #f1f5d3 100%
+  );
   height: 2.875rem;
   line-height: 2.875rem;
   white-space: nowrap;
@@ -535,7 +540,7 @@ main .button p:nth-child(1) {
   height: 24.875rem;
   border-radius: 0.625rem;
   border: 1px solid #000;
-  background: url(./img/chicken-rib-gum.gif) no-repeat 50% 60%/ cover;
+  background: url(./img/chicken-rib-gum.gif) no-repeat 50% 60% / cover;
 }
 
 .article2 .article2_img .article2_title {
@@ -564,11 +569,11 @@ main .button p:nth-child(1) {
   border: 1px solid #000;
   border-radius: 0.5rem;
   background: #fff;
-  margin: .8rem auto 0;
+  margin: 0.8rem auto 0;
   justify-content: space-between;
   padding: 1rem 1.65rem;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .article2 .article2_title .click:hover {
@@ -596,12 +601,12 @@ main .button p:nth-child(1) {
 .article3 .article3_title h1 {
   font-size: 7.71544rem;
   text-transform: uppercase;
-  color: #FFF;
+  color: #fff;
   text-shadow: 1.4715657234191895px 2.207348585128784px #000;
   -webkit-text-stroke: 1px #000;
   margin: 0 0 1.71rem 0;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .article3 .article3_title h1:nth-child(1) {
@@ -613,7 +618,7 @@ main .button p:nth-child(1) {
 }
 
 .article3 .article3_title p {
-  margin: 2rem 4.94rem 0 .4rem;
+  margin: 2rem 4.94rem 0 0.4rem;
 }
 
 .article3 .article3_img {
@@ -631,7 +636,7 @@ main .button p:nth-child(1) {
   margin-right: 1.87rem;
   border-radius: 0.4375rem;
   border: 1px solid #000;
-  background: rgba(217, 217, 217, 0.50);
+  background: rgba(217, 217, 217, 0.5);
   overflow: hidden;
 }
 
@@ -667,7 +672,7 @@ main .button p:nth-child(1) {
 }
 
 .article3 .article3_img .object .add {
-  padding: .9rem;
+  padding: 0.9rem;
   text-transform: uppercase;
   background-color: beige;
   border-top: 1px solid #000;
@@ -678,13 +683,12 @@ main .button p:nth-child(1) {
 .article4 {
   width: 100%;
   background: #f5d4a2;
-
 }
 
 .article4 h1 {
   font-size: 23.18281rem;
   text-shadow: 4.4216718673706055px 6.632508754730225px #000;
-  color: #FFF;
+  color: #fff;
   -webkit-text-stroke: 1px #000;
   text-align: center;
   padding: -1rem;
@@ -692,7 +696,7 @@ main .button p:nth-child(1) {
 
 .article4 .line {
   font-size: 2.21238rem;
-  color: #FFF;
+  color: #fff;
   -webkit-text-stroke: 1px #000;
   text-transform: uppercase;
   margin: 0 5.5rem 3rem 5.5rem;
@@ -735,7 +739,7 @@ main .button p:nth-child(1) {
   grid-row: 1/2;
   border-radius: 0.9375rem;
   border: 1px solid #000;
-  padding: 1.62rem .8rem 1.44rem;
+  padding: 1.62rem 0.8rem 1.44rem;
 }
 
 .article5 .review .review1 {
@@ -743,9 +747,9 @@ main .button p:nth-child(1) {
   grid-row: 2/4;
   border-radius: 0.9375rem;
   border: 1px solid #000;
-  background: url(./img/review1.jpg) no-repeat 70% 50%/ cover;
+  background: url(./img/review1.jpg) no-repeat 70% 50% / cover;
   filter: contrast(70%);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .article5 .review .review2 {
@@ -753,9 +757,9 @@ main .button p:nth-child(1) {
   grid-row: 1/3;
   border-radius: 0.9375rem;
   border: 1px solid #000;
-  background: url(./img/review2.jpg) no-repeat 65% 50%/ cover;
+  background: url(./img/review2.jpg) no-repeat 65% 50% / cover;
   filter: contrast(70%);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .article5 .review #review2 {
@@ -763,7 +767,7 @@ main .button p:nth-child(1) {
   grid-row: 3/4;
   border-radius: 0.9375rem;
   border: 1px solid #000;
-  padding: 1.62rem .8rem 1.44rem;
+  padding: 1.62rem 0.8rem 1.44rem;
 }
 
 .article5 .review #review3 {
@@ -771,7 +775,7 @@ main .button p:nth-child(1) {
   grid-row: 1/2;
   border-radius: 0.9375rem;
   border: 1px solid #000;
-  padding: 1.62rem .8rem 1.44rem;
+  padding: 1.62rem 0.8rem 1.44rem;
 }
 
 .article5 .review .review3 {
@@ -779,9 +783,9 @@ main .button p:nth-child(1) {
   grid-row: 2/4;
   border-radius: 0.9375rem;
   border: 1px solid #000;
-  background: url(./img/review3.jpg) no-repeat 80% 50%/ cover;
+  background: url(./img/review3.jpg) no-repeat 80% 50% / cover;
   filter: contrast(70%);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .article5 .review .review4 {
@@ -789,9 +793,9 @@ main .button p:nth-child(1) {
   grid-row: 2/4;
   border-radius: 0.9375rem;
   border: 1px solid #000;
-  background: url(./img/review4.jpg) no-repeat 45% 50%/ cover;
+  background: url(./img/review4.jpg) no-repeat 45% 50% / cover;
   filter: contrast(70%);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .article5 .review .review1:hover,
@@ -808,11 +812,13 @@ footer {
 
 footer .footer-title {
   height: 7.6875rem;
-  background: linear-gradient(270deg,
-      #fddfb1 0%,
-      #ecddd9 53.65%,
-      #e3ddde 76.04%,
-      #f1f5d3 100%);
+  background: linear-gradient(
+    270deg,
+    #fddfb1 0%,
+    #ecddd9 53.65%,
+    #e3ddde 76.04%,
+    #f1f5d3 100%
+  );
   padding: 1.07rem 4.3rem;
   justify-content: space-between;
   border-top: 1px solid #000;
@@ -822,7 +828,7 @@ footer .footer-title {
 
 footer .footer-title h2 {
   font-size: 4.40613rem;
-  color: #FFF;
+  color: #fff;
   text-shadow: 0.8403881192207336px 1.2605822086334229px #000;
   -webkit-text-stroke: 1px #000;
   text-transform: uppercase;
@@ -853,7 +859,7 @@ footer .footer-blog .footer-logo p {
 
 footer .footer-blog .footer-logo .input {
   margin-bottom: 2.44rem;
-  justify-content: center
+  justify-content: center;
 }
 
 footer .footer-blog .footer-logo .input input {
@@ -863,7 +869,7 @@ footer .footer-blog .footer-logo .input input {
   border: 1px solid #000;
   padding: 1.37rem 0.7rem;
   border-right: none;
-  background: rgba(217, 217, 217, 0.50);
+  background: rgba(217, 217, 217, 0.5);
   font-size: 1.2rem;
 }
 
@@ -875,7 +881,8 @@ footer .footer-blog .footer-logo .input button {
   padding: 1.37rem 0.7rem;
   border-left: none;
   text-indent: -9999px;
-  background: rgba(217, 217, 217, 0.50) url(./img/footer-arrow.png) no-repeat 50% / 70%;
+  background: rgba(217, 217, 217, 0.5) url(./img/footer-arrow.png) no-repeat 50% /
+    70%;
   cursor: pointer;
 }
 
