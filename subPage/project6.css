@@ -3,3 +3,7 @@
 .article1 .box {
   height: 32rem;
 }
+
+.article2 .problem {
+  line-height: 180%;
+}
