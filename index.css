@@ -562,6 +562,9 @@ header h1 {
   border: none;
 }
 
+.article2 .project .design6 .article2_project_menu .team {
+  opacity: 40%;
+}
 .article2 .project .design6 .article2_project_menu .Responsive {
   opacity: 40%;
 }
@@ -573,14 +576,15 @@ header h1 {
 }
 
 .article2 .project .design6 .design6_img {
+  width: 95%;
   position: absolute;
-  top: 8.19rem;
-  left: 2.5rem;
+  top: 5.3rem;
+  right: 1.5rem;
 }
 
 .article2 .project .design6 h4 {
   font-size: 5.5rem;
-  margin-top: 23.5rem;
+  margin-top: 17rem;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -649,7 +653,8 @@ header h1 {
     background-color: white;
   }
 
-  100% {}
+  100% {
+  }
 }
 
 .article3 p .opacity {
@@ -787,7 +792,7 @@ header h1 {
   background-color: #ddd;
 }
 
-.article4 .article4_list .flex:hover+img {
+.article4 .article4_list .flex:hover + img {
   opacity: 1;
   transform: translateY(0);
 }
@@ -841,7 +846,7 @@ footer .mail:hover span::after {
   transition: all 0.4s ease;
 }
 
-footer .contact:hover+.mail span::after {
+footer .contact:hover + .mail span::after {
   content: "";
   width: 30%;
   left: 10.87rem;
