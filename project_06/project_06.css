@@ -208,6 +208,37 @@ main .restaurant {
   top: 35.13rem;
 }
 
+main .homemade,
+main .pet,
+main .snack,
+main .restaurant {
+  color: white;
+  animation: main-color 10s linear infinite alternate;
+}
+
+@keyframes main-color {
+  0%,
+  30% {
+    /* color: #d1ad91; */
+    color: red;
+  }
+
+  35%,
+  65% {
+    color: #f5db95;
+  }
+
+  70%,
+  95% {
+    color: #e0abb2;
+  }
+
+  100% {
+    /* color: #d1ad91; */
+    color: red;
+  }
+}
+
 main .main_img_box {
   border: 2px solid #000;
   border-radius: 11.96875rem 11.96875rem 0.9375rem 0.9375rem;
@@ -218,6 +249,7 @@ main .main_img_box {
   right: 6rem;
   overflow: hidden;
   box-shadow: 8px 9px 0px -1px #000;
+
   animation: main-img 10s linear infinite alternate;
   animation-direction: normal;
 }
@@ -253,6 +285,7 @@ main .main_img_box .img_icon .img_icon1 {
   background: #fff url(./img/beef.png) no-repeat 50% / 55%;
   filter: grayscale(1);
   transition: 0.1s;
+
   animation: main-icon1 10s linear infinite alternate;
   animation-direction: normal;
 }
