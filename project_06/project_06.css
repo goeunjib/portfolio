@@ -218,24 +218,17 @@ main .restaurant {
 
 @keyframes main-color {
   0%,
-  30% {
-    /* color: #d1ad91; */
-    color: red;
-  }
-
-  35%,
-  65% {
-    color: #f5db95;
-  }
-
-  70%,
-  95% {
-    color: #e0abb2;
-  }
-
+  30%,
   100% {
-    /* color: #d1ad91; */
-    color: red;
+    color: #d1ad91;
+  }
+
+  50% {
+    color: #eeb74e;
+  }
+
+  75% {
+    color: #e09fa6;
   }
 }
 
