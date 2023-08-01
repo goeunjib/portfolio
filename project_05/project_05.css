@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap");
 /* font-family: 'Noto Sans KR', sans-serif; */
@@ -6,7 +9,7 @@ body {
   min-width: 1400px;
   font-family: "Noto Sans KR", sans-serif;
 }
-/********* header *********/
+/********** header **********/
 header {
   background: url(./img/tittle.jpg) no-repeat 50% / contain;
   background-size: 100%;
@@ -34,12 +37,14 @@ header .headerBar .Ko {
 }
 header .headerBar .menu {
   margin: 0;
-  min-width: 433px;
+  width: 25%;
   justify-content: space-between;
 }
 header .headerBar .menu li {
   min-height: 62px;
-  padding: 0 10px;
+  transition: 0.2s;
+  text-align: center;
+  padding: 0 12.5px;
 }
 header .headerBar .menu li a {
   font-size: var(--fotn-size-14);
@@ -111,15 +116,23 @@ header .nowStarting ul {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
   min-width: 562px;
-  min-height: 49px;
   justify-content: space-around;
   align-items: center;
+}
+header .nowStarting li {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  transition: 0.2s;
+}
+header .nowStarting li:hover {
+  background-color: var(--main-color);
 }
 header .nowStarting ul li a {
   color: #383838;
 }
 
-/********* service *********/
+/********** service **********/
 .service {
   width: 1180px;
   margin: 0 auto 145px;
@@ -139,9 +152,29 @@ header .nowStarting ul li a {
   margin: 20px 20px 0 20px;
   text-align: center;
 }
+.service .first .img1 .img {
+  background: url(./img/service-img1.jpeg) no-repeat 100% 50% / cover;
+  filter: grayscale(60%);
+  border-radius: 15px;
+  transition: 0.2s;
+  margin-bottom: 15px;
+}
+.service .first .img1 .img:hover {
+  filter: grayscale(0%);
+}
 .service .first .img2 {
   margin: 20px 20px 0 20px;
   text-align: center;
+}
+.service .first .img2 .img {
+  background: url(./img/service-img2.jpg) no-repeat 50% / cover;
+  filter: grayscale(60%);
+  border-radius: 15px;
+  transition: 0.2s;
+  margin-bottom: 15px;
+}
+.service .first .img2 .img:hover {
+  filter: grayscale(0%);
 }
 .service .second {
   justify-content: flex-end;
@@ -150,16 +183,54 @@ header .nowStarting ul li a {
   margin: 20px 20px 0 20px;
   text-align: center;
 }
+.service .second .img3 .img {
+  background: url(./img/service-img3.jpg) no-repeat 100% 50% / cover;
+  filter: grayscale(60%);
+  border-radius: 15px;
+  transition: 0.2s;
+  margin-bottom: 15px;
+}
+.service .second .img3 .img:hover {
+  filter: grayscale(0%);
+}
 .service .second .img4 {
   margin: 20px 20px 0 20px;
   text-align: center;
+}
+.service .second .img4 .img {
+  background: url(./img/service-img4.png) no-repeat 50% 50% / cover;
+  filter: grayscale(60%);
+  border-radius: 15px;
+  transition: 0.2s;
+  margin-bottom: 15px;
+}
+.service .second .img4 .img:hover {
+  filter: grayscale(0%);
 }
 .service .second .img5 {
   margin: 20px 20px 0 20px;
   text-align: center;
 }
+.service .second .img5 .img {
+  background: url(./img/service-img5.jpg) no-repeat 95% 50% / cover;
+  filter: grayscale(60%);
+  border-radius: 15px;
+  transition: 0.2s;
+  margin-bottom: 15px;
+}
+.service .second .img5 .img:hover {
+  filter: grayscale(0%);
+}
+.service .first .img1 .img,
+.service .first .img2 .img,
+.service .second .img3 .img,
+.service .second .img4 .img,
+.service .second .img5 .img {
+  width: 353px;
+  height: 353px;
+}
 
-/********* search *********/
+/********** search **********/
 .search {
   width: 1300px;
   margin: 0 auto 157px;
@@ -171,11 +242,6 @@ header .nowStarting ul li a {
   font-size: var(--font-size-tittle-40);
   padding-left: 70px;
 }
-/* .search .tittle h2::before {
-  width: 50px;
-  height: 20px;
-  background-color: red;
-} */
 .search .tittle a {
   font-size: var(--font-size-20);
   margin-right: 80px;
@@ -218,6 +284,7 @@ header .nowStarting ul li a {
   margin: 6px;
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 .search .search-box a {
   display: flex;
@@ -238,9 +305,17 @@ header .nowStarting ul li a {
 }
 .search .search-box .searchIcon .icon1 {
   border-right: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.search .search-box .searchIcon img:hover {
+  opacity: 100%;
 }
 .search .search-box .searchIcon .icon2 {
   border-right: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.search .search-box .searchIcon .icon3 {
+  cursor: pointer;
 }
 .search .search-box .searchIcon figcaption {
   font-size: var(--font-size-15);
@@ -250,9 +325,10 @@ header .nowStarting ul li a {
   margin-bottom: 10px;
   width: 35%;
   opacity: 70%;
+  transition: 0.1s;
 }
 
-/********* delivery *********/
+/********** delivery **********/
 .delivery {
   width: 1214px;
   margin: 0 auto 306px;
@@ -272,10 +348,11 @@ header .nowStarting ul li a {
 .delivery .bar .yellow {
   width: 559px;
   height: 49px;
-  background-color: var(--main-color);
+  background-color: #656565;
   border-radius: 5px 0 0 5px;
   font-size: var(--font-size-20);
   color: white;
+  transition: 0.2s;
 }
 .delivery .bar .white {
   background-color: white;
@@ -285,6 +362,11 @@ header .nowStarting ul li a {
   border-radius: 0 5px 5px 0;
   font-size: var(--font-size-20);
   color: white;
+  transition: 0.2s;
+}
+.delivery .bar .yellow:hover,
+.delivery .bar .white:hover {
+  background-color: var(--main-color);
 }
 .delivery .more {
   justify-content: space-around;
@@ -306,6 +388,7 @@ header .nowStarting ul li a {
 .delivery .more .delivery-box1 .online li {
   margin: 4.5;
   color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
 }
 .delivery .more .delivery-box1 .get {
   text-align: right;
@@ -319,6 +402,7 @@ header .nowStarting ul li a {
 .delivery .more .delivery-box1 .get li {
   margin: 4.5;
   color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
 }
 .delivery .more .delivery-box3 h5 {
   font-size: var(--font-size-30);
@@ -337,8 +421,10 @@ header .nowStarting ul li a {
 .delivery .more .delivery-box3 .li-box .li {
   margin-left: 30px;
   color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
 }
 
+/********** yellowBox **********/
 .yellowBox {
   height: 380px;
   margin-bottom: 108px;
@@ -360,8 +446,13 @@ header .nowStarting ul li a {
 .yellowBox img {
   width: 45px;
   opacity: 75%;
+  transition: 0.2s;
+}
+.yellowBox img:hover {
+  width: 60px;
 }
 
+/********** solution **********/
 .solution {
   width: 1192px;
   margin: 0 auto 108px;
@@ -390,16 +481,56 @@ header .nowStarting ul li a {
 .solution .solution-box1 {
   margin: 14px;
 }
+.solution .solution-box span {
+  color: red;
+}
+.solution .solution-box p {
+  transition: 0.1s;
+}
+.solution .solution-box p:hover {
+  font-weight: bold;
+}
+.solution .solution-box1 .img {
+  width: 388px;
+  height: 365px;
+  border-radius: 20px;
+  background: url(./img/solution1.jpeg) no-repeat 50% / cover;
+  filter: grayscale(50%);
+  transition: 0.1s;
+}
+.solution .solution-box1 .img:hover {
+  filter: grayscale(0);
+}
 .solution .solution-box2 {
   margin: 14px;
+}
+.solution .solution-box2 .img {
+  width: 388px;
+  height: 365px;
+  border-radius: 20px;
+  background: url(./img/solution2.jpg) no-repeat 70% 50% / cover;
+  filter: grayscale(50%);
+  transition: 0.1s;
+}
+.solution .solution-box2 .img:hover {
+  filter: grayscale(0);
 }
 .solution .solution-box3 {
   margin: 14px;
 }
-.solution .solution-box3 img {
+.solution .solution-box3 .img {
+  width: 388px;
+  height: 365px;
   border-radius: 20px;
+  background: url(./img/solution3.png) no-repeat 55% 50% / cover;
+  filter: grayscale(50%);
+  transition: 0.1s;
+}
+.solution .solution-box3 .img:hover {
+  filter: grayscale(0);
 }
 
+/********** customer **********/
 .customer {
   background-color: #f8f9fa;
   margin: 0 auto;
@@ -412,8 +543,11 @@ header .nowStarting ul li a {
   padding-top: 41px;
   margin-bottom: 18px;
 }
-.customer p {
+.customer .center {
   text-align: center;
+}
+.customer p {
+  padding: 0 10px;
   font-size: var(--font-size-20);
   color: rgba(0, 0, 0, 0.65);
   margin-bottom: 32px;
@@ -445,6 +579,11 @@ header .nowStarting ul li a {
 }
 .customer .customer-box .customer-box-yellow a {
   color: white;
+  transition: 0.1s;
+}
+.customer .customer-box .customer-box-yellow a:hover {
+  font-weight: bold;
+  font-size: var(--font-size-18);
 }
 .customer .customer-box .customer-box-yellow li {
   padding-left: 13px;
@@ -470,6 +609,10 @@ header .nowStarting ul li a {
 .customer .customer-box .customer-box-white a {
   color: #656565;
   opacity: 65%;
+  transition: 0.1s;
+}
+.customer .customer-box .customer-box-white a:hover {
+  opacity: 100%;
 }
 .customer .customer-box .customer-box-white-1 {
   flex-wrap: wrap;
@@ -518,11 +661,16 @@ header .nowStarting ul li a {
 }
 .customer-box .white-box3 .customer-box-brown a {
   color: rgba(255, 255, 255, 0.8);
+  transition: 0.1s;
+}
+.customer-box .white-box3 .customer-box-brown a:hover {
+  font-weight: bold;
 }
 .customer-box .white-box3 .customer-box-brown p {
   font-size: var(--font-size-15);
 }
 
+/********** impormation **********/
 .impormation img {
   display: block;
   margin: 0 auto;
@@ -556,13 +704,16 @@ header .nowStarting ul li a {
   font-size: 18px;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.75);
-  padding-left: 10px;
+  padding: 0;
+  margin: 0;
 }
 .impormation .impormation-tittle p {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.75);
   text-align: left;
-  padding-left: 45px;
+  padding-left: 60px;
+  margin-top: 8px;
+  cursor: pointer;
 }
 .impormation .impormation-tittle .impormation-tittle1 {
   width: 430px;
@@ -570,7 +721,7 @@ header .nowStarting ul li a {
   margin-right: 80px;
 }
 .impormation .impormation-tittle .impormation-tittle1 .impormation-tittle-box1 {
-  align-items: flex-end;
+  align-items: center;
 }
 .impormation .impormation-tittle .impormation-tittle2 {
   width: 280px;
@@ -591,6 +742,7 @@ header .nowStarting ul li a {
   align-items: flex-end;
 }
 
+/********** history **********/
 .history {
   background-color: #f8f9fa;
   height: 610px;
@@ -634,8 +786,13 @@ header .nowStarting ul li a {
   font-size: var(--font-size-20);
   line-height: 65px;
   padding-left: 20px;
+  transition: 0.1s;
+}
+.history p a:hover {
+  font-weight: bold;
 }
 
+/********** feedback **********/
 .feedback .feedback-tittle {
   align-items: center;
   width: 300px;
@@ -674,10 +831,20 @@ header .nowStarting ul li a {
   padding-left: 8px;
   margin-bottom: 15px;
 }
-.feedback .feedback-part .smileBar img {
+.feedback .feedback-part .smileBar .img {
   width: 206px;
   height: 40px;
   margin-right: 16px;
+}
+.feedback .feedback-part .smileBar .img img {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+.feedback .feedback-part .smileBar .img img:hover {
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  cursor: pointer;
 }
 .feedback .feedback-part .ask {
   height: 222px;
@@ -694,8 +861,10 @@ header .nowStarting ul li a {
   line-height: 48px;
   text-align: center;
   margin-bottom: 197px;
+  cursor: pointer;
 }
 
+/********** Integrations **********/
 .Integrations {
   width: 990px;
   margin: 0 auto;
@@ -736,6 +905,11 @@ header .nowStarting ul li a {
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: 50% 50%;
+  opacity: 70%;
+  transition: 0.2s;
+}
+.Integrations .surportLogo .iaf:hover {
+  opacity: 100%;
 }
 .Integrations .surportLogo .woo {
   width: 177px;
@@ -744,6 +918,11 @@ header .nowStarting ul li a {
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: 50% 50%;
+  opacity: 60%;
+  transition: 0.2s;
+}
+.Integrations .surportLogo .woo:hover {
+  opacity: 100%;
 }
 .Integrations .surportLogo .s {
   width: 177px;
@@ -752,6 +931,11 @@ header .nowStarting ul li a {
   background-repeat: no-repeat;
   background-size: 65%;
   background-position: 50% 50%;
+  opacity: 60%;
+  transition: 0.2s;
+}
+.Integrations .surportLogo .s:hover {
+  opacity: 100%;
 }
 .Integrations .surportLogo .aa {
   width: 177px;
@@ -760,6 +944,11 @@ header .nowStarting ul li a {
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: 50% 50%;
+  opacity: 60%;
+  transition: 0.2s;
+}
+.Integrations .surportLogo .aa:hover {
+  opacity: 100%;
 }
 .Integrations .surportLogo .shop {
   width: 177px;
@@ -768,8 +957,14 @@ header .nowStarting ul li a {
   background-repeat: no-repeat;
   background-size: 75%;
   background-position: 50% 50%;
+  opacity: 60%;
+  transition: 0.2s;
+}
+.Integrations .surportLogo .shop:hover {
+  opacity: 100%;
 }
 
+/********** footer **********/
 footer {
   background-color: var(--main-color);
 }
@@ -786,6 +981,7 @@ footer .settings {
   width: 650px;
   justify-content: space-between;
   font-size: var(--font-size-13);
+  cursor: pointer;
 }
 footer .copy {
   font-size: var(--font-size-13);
@@ -794,6 +990,8 @@ footer .copy p a {
   padding: 5px 10px;
   font-size: 1rem;
   transition: 0.2s;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
 }
 footer .copy p a:hover {
   padding: 5px 10px;
@@ -806,8 +1004,18 @@ footer .cookie {
   margin: 0 auto;
 }
 footer .cookie .SNSicon {
-  width: 165px;
+  width: 170px;
   justify-content: space-between;
+  margin-right: -60px;
+}
+footer .cookie .SNSicon img {
+  height: 30px;
+  opacity: 55%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+footer .cookie .SNSicon img:hover {
+  opacity: 80%;
 }
 footer .up img {
   width: 40px;
