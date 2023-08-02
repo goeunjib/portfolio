@@ -860,7 +860,7 @@ footer .contact:hover + .mail span::after {
 
 footer .mail {
   font-size: 3.125rem;
-  margin: 0 0 5.12rem 10.87rem;
+  margin: 0 0 3rem 10.87rem;
   padding: 10px;
   color: var(--main-color);
   line-height: 1.5;
@@ -870,4 +870,22 @@ footer .mono {
   width: 98.125rem;
   margin: 0 154px;
   text-align: center;
+}
+
+footer .git {
+  font-size: 1.5rem;
+  margin: 0 0 3rem 10.87rem;
+}
+
+footer .git a {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: 0.2s;
+}
+
+footer .git a:hover {
+  font-weight: normal;
+  background-color: var(--main-color);
 }

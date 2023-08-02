@@ -1020,81 +1020,42 @@ header .nowStarting ul li a {
   margin-bottom: 30px;
   color: rgba(0, 0, 0, 0.5);
 }
-.Integrations .surportLogo {
-  width: 990px;
-  height: 220px;
-  justify-content: space-between;
-  position: relative;
+.Integrations .swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.Integrations .surportLogo .slider-container {
-  width: 990px;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  transition: transform 1s ease;
-  margin: 0 auto;
-}
-.Integrations .surportLogo .slider-container .slider-wrapper {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  list-style: none;
+.Integrations .swiper .swiper-wrapper {
   display: flex;
 }
-.Integrations .surportLogo .slider-container .slider-wrapper .slide {
-  width: 350px;
-  min-height: 180px;
-  flex: 0 0 250px;
-}
-.Integrations
-  .surportLogo
-  .slider-container
-  .slider-wrapper
-  .slide:not(:first-child) {
-  margin-left: 10px;
-}
-.Integrations .surportLogo .slider-container .slider-wrapper.animate {
-  transition: transform 2s ease;
-}
-.Integrations .surportLogo .slider-container .slider-wrapper .post {
-  overflow: hidden;
-  width: 200px;
-  height: 160px;
-  border: 2px orange solid;
+.Integrations .swiper .swiper-wrapper .swiper-slide {
+  width: 220px;
+  height: 156px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--main-color);
   border-radius: 10px;
+  margin-bottom: 40px;
 }
-.Integrations .surportLogo .slider-container .slider-wrapper .post .img {
-  pointer-events: none;
-  -khtml-user-select: none;
-  -o-user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
+.Integrations .swiper .swiper-wrapper .slide1 {
+  background: url(./img/logo1.png) no-repeat 50% 50% / 80%;
 }
-.Integrations .surportLogo .slider-container .slider-wrapper .video1 .img {
-  width: 250px;
-  height: 180px;
-  background: url(./img/logo1.png) no-repeat 50% / 90%;
+.Integrations .swiper .swiper-wrapper .slide2 {
+  background: url(./img/logo2.jpg) no-repeat 50% / 60%;
 }
-.Integrations .surportLogo .slider-container .slider-wrapper .video2 .img {
-  width: 250px;
-  height: 180px;
-  background: url(./img/logo2.jpg) no-repeat 50% / 65%;
+.Integrations .swiper .swiper-wrapper .slide3 {
+  background: url(./img/logo3.jpg) no-repeat 50% / 55%;
 }
-.Integrations .surportLogo .slider-container .slider-wrapper .video3 .img {
-  width: 250px;
-  height: 180px;
-  background: url(./img/logo3.jpg) no-repeat 50% / 62%;
+.Integrations .swiper .swiper-wrapper .slide4 {
+  background: url(./img/logo4.png) no-repeat 50% / 50%;
 }
-.Integrations .surportLogo .slider-container .slider-wrapper .video4 .img {
-  width: 250px;
-  height: 180px;
-  background: url(./img/logo4.png) no-repeat 50% / 55%;
-}
-.Integrations .surportLogo .slider-container .slider-wrapper .video5 .img {
-  width: 250px;
-  height: 180px;
-  background: url(./img/logo5.png) no-repeat 50% / 70%;
+.Integrations .swiper .swiper-wrapper .slide5 {
+  background: url(./img/logo5.png) no-repeat 50% / 65%;
 }
 
 /********** footer **********/
