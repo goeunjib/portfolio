@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="./project_05.css" />
   <link rel="stylesheet" href="./project_05_common.css" />
+  <script defer src="./project_05.js"></script>
   <title>DHLRedesign</title>
 </head>
 
@@ -34,11 +35,34 @@
         </ul>
       </div>
     </div>
-    <div class="imgVector1">
-      <img src="./img/Vector.png" alt="화살표" />
-    </div>
-    <div class="imgVector2">
-      <img src="./img/Vector.png" alt="화살표" />
+    <div class="slide">
+      <div data-am-gallery>
+        <!-- Radio -->
+        <input type="radio" name="gallery" id="img-1" checked>
+        <input type="radio" name="gallery" id="img-2">
+        <input type="radio" name="gallery" id="img-3">
+        <input type="radio" name="gallery" id="img-4">
+
+        <!-- Images -->
+        <div class="images">
+          <div class="image" style="background-image: url(./img/tittle1.jpg);">
+          </div>
+          <div class="image" style="background-image: url(./img/tittle2.jpg);">
+          </div>
+          <div class="image" style="background-image: url(./img/tittle3.jpg);">
+          </div>
+          <div class="image" style="background-image: url(./img/tittle4.jpg);">
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="navigation">
+          <label class="dot" for="img-1"></label>
+          <label class="dot" for="img-2"></label>
+          <label class="dot" for="img-3"></label>
+          <label class="dot" for="img-4"></label>
+        </div>
+      </div>
     </div>
     <div class="nowStarting">
       <h2>지금 시작하기</h2>
@@ -373,9 +397,9 @@
     </p>
     <div class="feedback-part">
       <p>특정 부분</p>
-      <input type="text" placeholder="이 페이지의 특정 부분에 대한 의견을 제시하고 싶습니다." />
+      <input type="text" placeholder="&nbsp;&nbsp;이 페이지의 특정 부분에 대한 의견을 제시하고 싶습니다." />
       <p>전반적인 의견</p>
-      <input type="text" placeholder="웹사이트 전반에 대한 의견을 제시하고 싶습니다." />
+      <input type="text" placeholder="&nbsp;&nbsp;웹사이트 전반에 대한 의견을 제시하고 싶습니다." />
       <p>DHL의 새로운 웹사이트에 대해 어떻게 생각하시나요?</p>
       <div class="smileBar flex">
         <div class="img flex">
@@ -388,7 +412,7 @@
         <input type="text">
       </div>
       <p>Powered by GetFeedback</p>
-      <input type="text" placeholder="저희에게 무엇을 알리고 싶으신가요?" class="ask">
+      <input type="text" placeholder="&nbsp;&nbsp;저희에게 무엇을 알리고 싶으신가요?" class="ask">
       <p class="end-bar">제출하기</p>
     </div>
   </article>
@@ -397,13 +421,26 @@
     <h2>Our Digital Integrations:</h2>
     <p class="orders">Easily Handle Your E-Commerce Orders With DHL</p>
     <div class="surportLogo flex">
-      <p class="iaf"></p>
-      <p class="woo"></p>
-      <p class="s"></p>
-      <p class="aa"></p>
-      <p class="shop"></p>
+      <div class="slider-container">
+        <ul class="slider-wrapper">
+          <li class="slide post video1">
+            <div class="img"></div>
+          </li>
+          <li class="slide post video2">
+            <div class="img"></div>
+          </li>
+          <li class="slide post video3">
+            <div class="img"></div>
+          </li>
+          <li class="slide post video4">
+            <div class="img"></div>
+          </li>
+          <li class="slide post video5">
+            <div class="img"></div>
+          </li>
+        </ul>
+      </div>
     </div>
-    <img src="./img/dot.png" alt="dot">
   </article>
 
   <footer>
