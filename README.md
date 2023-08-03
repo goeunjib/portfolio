@@ -22,6 +22,7 @@ Let's take a look 👀
 **sub-page_06 fabrication**   | ~ July / 23 / 2023
 **Link [sub-page_06/project_06]**   | ~ July / 26 / 2023
 **effect add to project_05**   | ~ July / 31 / 2023
+**ReadMe modify**   | ~ August / 3 / 2023
 
 ## Used Skill 📝
 
