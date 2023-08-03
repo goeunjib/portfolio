@@ -5,9 +5,23 @@ I make various efforts to produce my portfolio. <br/>
 Let's take a look 👀
 
 ## The modification process 📅
-|Production Start|Portfolio Design| sdsd|
-|--|--|
-|June / 8 / 2023|~ June / 10 / 2023| sdsd|
+*List of projects* | *month/day/year*
+| :---: | :---: |
+**Production Start**  | June / 8 / 2023 
+**Portfolio Design**   | ~ June / 10 / 2023 
+**html fabrication**   | ~ June / 26 / 2023 
+**main frame fabrication**   | ~ June / 27 / 2023 
+**favicon add**   | ~ June / 28 / 2023 
+**open-graph add**   | ~ June / 29 / 2023 
+**Css Annotation Theorem**   | ~ July / 1 / 2023
+**project (1~5) add**   | ~ July / 4 / 2023
+**Folder Intermediate Check**   | ~ July / 11 / 2023
+**sub-page (1~5) add**   | ~ July / 13 / 2023
+**Merge [sub-page_02/project_02]**   | ~ July / 18 / 2023
+**project_06 fabrication**   | ~ July / 20 / 2023
+**sub-page_06 fabrication**   | ~ July / 23 / 2023
+**Link [sub-page_06/project_06]**   | ~ July / 26 / 2023
+**effect add to project_05**   | ~ July / 31 / 2023
 
 ## Used Skill 📝
 
