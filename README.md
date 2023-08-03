@@ -22,6 +22,7 @@ However, the menu bar of the header is visible even when the page is up and down
     파일이 꼬이기도 하고 누락된 부분도 있어서 처음엔 사용하기 어려웠습니다. 
     하지만 header의 menu bar는 페이지를 올려도 내려도 보이는 부분이기 때문에 포기하지 않고 완성했습니다.
  <br/>
+
 ***- Number Count*** <br/>
 The number count, which was used as a decorative element to show the project as a trailer under the main, introduced many plug-ins available, so we modified the number and speed position of the count to match the mood of the portfolio.
 
