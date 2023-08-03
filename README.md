@@ -6,7 +6,7 @@ Let's take a look 👀
 
 ## The modification process 📅
 *List of projects* | *month/day/year*
-| :---: | :---: |
+| :--- | :---: |
 **Production Start**  | June / 8 / 2023 
 **Portfolio Design**   | ~ June / 10 / 2023 
 **html fabrication**   | ~ June / 26 / 2023 
