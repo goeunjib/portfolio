@@ -21,38 +21,38 @@ However, the menu bar of the header is visible even when the page is up and down
     span과 div를 추가하는 script를 사용해 본 적이 없고, 다른 서브페이지에도 같은 값으로 연결되어야해서 
     파일이 꼬이기도 하고 누락된 부분도 있어서 처음엔 사용하기 어려웠습니다. 
     하지만 header의 menu bar는 페이지를 올려도 내려도 보이는 부분이기 때문에 포기하지 않고 완성했습니다.
-
-***- Number Count***
+ <br/>
+***- Number Count*** <br/>
 The number count, which was used as a decorative element to show the project as a trailer under the main, introduced many plug-ins available, so we modified the number and speed position of the count to match the mood of the portfolio.
 
     메인 아래에 프로젝트를 예고편으로 보여주는 장식적인 요소로 사용된 숫자 카운트는 사용 가능한 플러그인들이
     많이 소개 되어 있어서 포트폴리오의 분위기에 맞춰 카운트의 숫자와 속도 위치등 을 수정해 사용하였습니다. 
 
-***- Position : fixed***
+***- Position : fixed*** <br/>
 The short self-introduction contents were placed in the blank area of the screen with the position fixed value and filled.
 
     짧은 자기소개 내용들을 화면 빈 곳에 포지션 fixed 값으로 배치해 채워주었습니다. 
 
-***- Scroll animation***
+***- Scroll animation*** <br/>
 In the ' work ' part, it is a page that introduces works, and I made it to show a long scroll screen with a gif-image there. This gif-image was created by Adobe Photoshop using a tool called animation.
 
     ' work '부분엔 작업물들을 소개하는 페이지로 그곳에 gif 이미지로 긴 스크롤 화면을 보여주기 위해 
     만들었습니다. 이 gif를 만들기 위해 어도비 포토샵에서 animation이라는 툴을 사용해 제작되었습니다.   
 
-***- Text animation***
+***- Text animation*** <br/>
 The effect of typing in the part of ' POTENTIAL & TECH STACK '
 I made it into an animation of css because I got to use things about skill as a decorative part of my portfolio.
 
     ' POTENTIAL & TECH STACK '부분에 글자가 타이핑되는 듯한 효과는 skill에 대한 것들을 포트폴리오의 
     장식적인 부분으로 사용하게 되어 css의 animation으로 만들었습니다. 
 
-***- Text hover***
+***- Text hover*** <br/>
 If there are many letters, it is not readable, but there are contents that need to be introduced, so we used hover to make it easier to understand. The associated logo image of the text being read with the location of the mouse may be shown or disappeared due to the hover.
 
     글자가 많으면 가독성이 떨어지지만 소개해야 하는 내용들이 있기에 이해하기 쉽도록 hover를 이용했습니다.
     마우스의 위치로 읽고 있는 글의 관련된 logo 이미지를 hover로 인해 보이기도 했다가 사라지기도 합니다.
 
-***- E-mail underline***
+***- E-mail underline*** <br/>
 In order to see the e-mail of the footer part well, we added the effect of underlining when the mouse approaches the e-mail part using hover and after with css.
 
     footer부분 E-mail이 잘 보이기 위해 hover와 after을 사용해 마우스가 E-mail 부분에 가까이 가면 밑줄이
