@@ -11,7 +11,7 @@ Let's take a look 👀
 
 ## Used Skill 📝
 
-***- Script to add span and div***
+***- Script to add span and div*** <br/>
 The menu bar used at the top of the portfolio main is fixed when scrolling using position fixed. I added the motion effect of the characters as a script so that it is easy to understand the location of the cursor at once.  
 I've never used a script that adds span and div, and it was difficult to use at first because the file was twisted and missing because it had to be connected to other sub-pages with the same value.  
 However, the menu bar of the header is visible even when the page is up and down, so I didn't give up and completed it.
