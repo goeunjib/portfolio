@@ -1,7 +1,7 @@
 #  👋🏻 " Eunji Go"_potfolio
 
-Hi! I'm Go Eun Ji. Nice to meet you!
-I make various efforts to produce my portfolio.
+Hi! I'm Go Eun Ji. Nice to meet you! <br/>
+I make various efforts to produce my portfolio. <br/>
 Let's take a look 👀
 
 ## The modification process 📅
